@@ -1,0 +1,1779 @@
+## tagger training invoked at Fri Mar 24 09:24:48 CET 2023 with arguments:
+                   model = myFrench-ud.tagger
+                    arch = left3words,naacl2003unknowns,unicodeshapes(-1,1)
+            wordFunction = 
+               trainFile = format=TSV,wordColumn=1,tagColumn=3,fr-ud-train.conllu3
+         closedClassTags = 
+ closedClassTagThreshold = 40
+ curWordMinFeatureThresh = 2
+                   debug = false
+             debugPrefix = 
+            tagSeparator = _
+                encoding = utf-8
+              iterations = 10
+                    lang = french
+    learnClosedClassTags = false
+        minFeatureThresh = 2
+           openClassTags = 
+rareWordMinFeatureThresh = 10
+          rareWordThresh = 5
+                  search = qn
+                    sgml = false
+            sigmaSquared = 0.0
+                   regL1 = 0.75
+               tagInside = 
+                tokenize = true
+        tokenizerFactory = 
+        tokenizerOptions = asciiQuotes
+                 verbose = true
+          verboseResults = true
+    veryCommonWordThresh = 250
+                xmlInput = null
+              outputFile = 
+            outputFormat = slashTags
+     outputFormatOptions = 
+                nthreads = 8
+TaggerExperiments: adding word/tags
+Loading tagged words from fr-ud-train.conllu3
+Read 366371 words from fr-ud-train.conllu3 [done].
+Read 14554 sentences, min 2 words, max 404 words.
+Featurizing tagged data tokens...
+Featurized 380925 data tokens [done].
+xSize [num Phi templates] = 305182; ySize [num classes] = 19
+Hashing histories ...
+Hashed 305182 histories.
+Hashing populated histories ...
+Hashed populated histories.
+TaggerExperiments.getFeaturesNew: initializing fnumArr.
+  length of sTemplates keys: 449036
+getFeaturesNew adding features ...
+  total feats: 449036, populated: 107016
+  Max features per x,y pair: 33
+  Max non-zero y values for an x: 19
+  Number of non-zero feature x,y pairs: 5563948
+  Number of zero feature x,y pairs: 234510
+end getFeaturesNew.
+Samples from format=TSV,wordColumn=1,tagColumn=3,fr-ud-train.conllu3
+Number of features: 107016
+Tag set: [AUX, PRON, CCONJ, PROPN, SYM, ADJ, NUM, SCONJ, ADP, DET, ADV, PUNCT, .$$., PART, VERB, X, INTJ, NOUN, _]
+ pcond initialized 
+ zlambda initialized 
+ ftildeArr initialized 
+QNMinimizer called on double function of 107016 variables, using M = 10.
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 0: neg. log cond. likelihood = 1121610.4181367664 [1 calls to valueAt]
+               An explanation of the output:
+Iter           The number of iterations
+evals          The number of function evaluations
+SCALING        <D> Diagonal scaling was used; <I> Scaled Identity
+LINESEARCH     [## M steplength]  Minpack linesearch
+                   1-Function value was too high
+                   2-Value ok, gradient positive, positive curvature
+                   3-Value ok, gradient negative, positive curvature
+                   4-Value ok, gradient negative, negative curvature
+               [.. B]  Backtracking
+VALUE          The current function value
+TIME           Total elapsed time
+|GNORM|        The current norm of the gradient
+{RELNORM}      The ratio of the current to initial gradient norms
+AVEIMPROVE     The average improvement / current value
+EVALSCORE      The last available eval score
+ 
+Iter ## evals ## <SCALING> [LINESEARCH] VALUE TIME |GNORM| {RELNORM} AVEIMPROVE EVALSCORE
+
+lambda 2 too big: -263.2473684210715
+lambda 558 too big: -201.6578947367028
+lambda 1372 too big: 463.69473684195685
+lambda 1916 too big: -347.0473684212893
+lambda 1950 too big: -317.94736842121426
+lambda 2268 too big: -202.15789473670202
+lambda 2352 too big: -206.35789473670235
+lambda 2419 too big: 3982.73684210682
+lambda 2535 too big: 834.3578947389783
+lambda 2936 too big: 432.7263157893893
+lambda 3020 too big: 2225.5263157898903
+lambda 3232 too big: 408.77368421045753
+lambda 3521 too big: 269.64210526313786
+lambda 4054 too big: 370.0210526315484
+lambda 4199 too big: 1150.5263157906409
+lambda 4728 too big: 227.19999999992694
+lambda 5394 too big: 489.7789473682203
+lambda 5576 too big: 202.53157894712717
+lambda 5640 too big: 426.9789473683509
+lambda 6436 too big: 539.72631578933
+lambda 6582 too big: -204.1263157893502
+lambda 7304 too big: 236.089473684068
+lambda 7412 too big: -339.74736842127055
+lambda 7949 too big: 503.49999999987153
+lambda 8694 too big: 267.77368421016513
+lambda 9119 too big: 448.2684210524157
+lambda 9976 too big: -271.36315789478084
+lambda 10196 too big: 370.02105263157796
+lambda 10415 too big: 227.19999999992694
+lambda 10761 too big: 269.64210526313326
+lambda 11325 too big: 872.073684212596
+lambda 11628 too big: 520.0052631577945
+lambda 11637 too big: 621.9578947364776
+lambda 11755 too big: -287.5631578948227
+lambda 11835 too big: 1158.2210526322197
+lambda 11843 too big: 816.2105263162437
+lambda 12047 too big: 762.0473684221865
+lambda 12706 too big: 245.68421052624336
+lambda 13068 too big: 328.6157894736503
+lambda 13379 too big: 863.6000000004938
+lambda 13660 too big: -202.0578947367022
+lambda 13727 too big: -201.2578947367034
+lambda 14057 too big: -213.8473684209148
+lambda 14060 too big: 706.3526315814662
+lambda 14062 too big: 1610.4526315830892
+lambda 14868 too big: 636.494736841892
+lambda 14918 too big: 240.51578947360156
+lambda 15698 too big: 433.92105263106544
+lambda 16446 too big: 1378.799999999999
+lambda 17139 too big: 506.27368421052637
+lambda 18687 too big: 233.84210526300177
+lambda 19370 too big: 1021.4736842126545
+lambda 19488 too big: -223.66842105254733
+lambda 19725 too big: 1555.3157894748947
+lambda 20155 too big: -223.06842105254574
+lambda 22412 too big: 564.3421052626298
+lambda 22842 too big: 308.83684210512064
+lambda 22974 too big: -204.75789473669832
+lambda 23174 too big: 520.4315789472305
+lambda 23219 too big: 747.4631578947233
+lambda 23393 too big: -350.247368421297
+lambda 23451 too big: 346.22631578941434
+lambda 23888 too big: 205.16842105252314
+lambda 23895 too big: 478.3736842101146
+lambda 24836 too big: 561.4315789471174
+lambda 26253 too big: 767.5052631584442
+lambda 27303 too big: -205.62631578935213
+lambda 27446 too big: 440.8842105261406
+lambda 27883 too big: -287.363157894822
+lambda 27885 too big: -233.3631578946756
+lambda 28096 too big: 203.99999999993227
+lambda 28574 too big: 920.1421052634593
+lambda 29163 too big: 463.69999999985157
+lambda 29494 too big: -205.15789473669918
+lambda 29639 too big: 733.2263157894245
+lambda 29789 too big: -206.35789473670235
+lambda 30307 too big: -349.04736842129387
+lambda 30413 too big: -299.40526315801407
+lambda 30984 too big: -345.64736842128553
+lambda 32476 too big: 332.58421052615057
+lambda 32554 too big: 423.53684210508504
+lambda 32747 too big: 227.19473684203217
+lambda 33194 too big: 605.9210526311425
+lambda 33240 too big: -279.9052631579645
+lambda 33267 too big: 478.1052631575765
+lambda 33491 too big: 1232.0736842118501
+lambda 33503 too big: 1021.4736842126545
+lambda 34051 too big: -206.25789473670204
+lambda 34333 too big: -205.226315789351
+lambda 34663 too big: 924.4421052631596
+lambda 34843 too big: -287.7631578948231
+lambda 34844 too big: -282.1631578948085
+lambda 35058 too big: 643.7105263156889
+lambda 35065 too big: 796.421052631913
+lambda 35263 too big: 424.705263157807
+lambda 35994 too big: 275.20526315786185
+lambda 36355 too big: 325.6263157892461
+lambda 36503 too big: 230.25789473680948
+lambda 36729 too big: 325.51578947357075
+lambda 37875 too big: 1271.2736842105267
+lambda 38033 too big: 209.63684210520933
+lambda 38128 too big: 274.1157894736588
+lambda 39513 too big: -267.047368421081
+lambda 39796 too big: 761.2421052651991
+lambda 39843 too big: -286.7631578948203
+lambda 40072 too big: 767.5052631584442
+lambda 40243 too big: -224.56842105254992
+lambda 40944 too big: 463.69999999985157
+lambda 41270 too big: -247.16315789471423
+lambda 41790 too big: 275.99473684204503
+lambda 42843 too big: 1271.05789473806
+lambda 42996 too big: 1378.7947368421044
+lambda 43043 too big: 462.7947368414591
+lambda 45232 too big: -287.363157894822
+lambda 45628 too big: 465.4947368418538
+lambda 45640 too big: 409.5736842103262
+lambda 46156 too big: 474.3368421051832
+lambda 46313 too big: 1329.84210526599
+lambda 46536 too big: -203.6684210524953
+lambda 46588 too big: -223.46842105254683
+lambda 48454 too big: 240.97368421049046
+lambda 49096 too big: 267.77368421016513
+lambda 49100 too big: 931.9315789486104
+lambda 49175 too big: 239.02105263155073
+lambda 49238 too big: 313.72631578942134
+lambda 49260 too big: 214.6157894736071
+lambda 50482 too big: 1068.6315789501523
+lambda 50484 too big: 538.9315789468377
+lambda 51433 too big: -218.16842105253215
+lambda 51626 too big: 257.57368421036443
+lambda 52405 too big: 402.96315789465297
+lambda 52460 too big: 487.7947368418225
+lambda 52937 too big: 1206.6210526340867
+lambda 53845 too big: 200.84210526315306
+lambda 54239 too big: 572.4105263156513
+lambda 54436 too big: 297.71052631570154
+lambda 55608 too big: 235.25263157888492
+lambda 55874 too big: 399.16842105242637
+lambda 55916 too big: 433.92105263106544
+lambda 57126 too big: 352.80526315774426
+lambda 58373 too big: 287.18947368419117
+lambda 59270 too big: 468.1315789468101
+lambda 59811 too big: 1655.5315789486683
+lambda 61960 too big: 213.03684210462384
+lambda 62255 too big: 564.3421052626298
+lambda 62709 too big: -204.75789473669832
+lambda 63022 too big: 244.71578947361346
+lambda 63434 too big: 424.34736842062534
+lambda 65345 too big: 2090.4315789484403
+lambda 67726 too big: -201.6578947367028
+lambda 68612 too big: 212.23684210513125
+lambda 69310 too big: -202.15789473670202
+lambda 69410 too big: -206.35789473670235
+lambda 70860 too big: 302.9157894735995
+lambda 71262 too big: 2588.4947368445182
+lambda 72259 too big: 298.8052631576414
+lambda 72596 too big: 489.7789473682203
+lambda 72867 too big: -293.2052631579989
+lambda 72922 too big: -300.605263158017
+lambda 74660 too big: 1362.700000000592
+lambda 75634 too big: -287.1631578948215
+lambda 77192 too big: 253.00526315765333
+lambda 77214 too big: -213.90526315778422
+lambda 77219 too big: -259.7052631579101
+lambda 77221 too big: -247.50526315787602
+lambda 77269 too big: -272.2052631579442
+lambda 78209 too big: -298.3052631580114
+lambda 78210 too big: -292.80526315799784
+lambda 79303 too big: 452.97368421011015
+lambda 79580 too big: 245.68421052624336
+lambda 79776 too big: 507.4421052629366
+lambda 79862 too big: -262.7631578947589
+lambda 80445 too big: -202.0578947367022
+lambda 80482 too big: -201.2578947367034
+lambda 81583 too big: 248.87368421051062
+lambda 82112 too big: 322.87894736829577
+lambda 82221 too big: 241.98947368418703
+lambda 82622 too big: 235.42631578928632
+lambda 85649 too big: 298.8052631576414
+lambda 85732 too big: 219.16842105252474
+lambda 85973 too big: 1329.84210526599
+lambda 86503 too big: -286.06315789481874
+lambda 86671 too big: 236.27368421051466
+lambda 87283 too big: 214.62105263154572
+lambda 89084 too big: 999.3473684232691
+lambda 89089 too big: 338.47368421048344
+lambda 91490 too big: 426.4315789472205
+lambda 92094 too big: 452.97368421011015
+lambda 92400 too big: 1206.6210526340867
+lambda 92932 too big: 258.0842105261659
+lambda 95082 too big: 1580.5894736852003
+lambda 95097 too big: 1273.073684211125
+lambda 95102 too big: 210.22105263155572
+lambda 95103 too big: 209.4631578947157
+lambda 95143 too big: 961.9526315832884
+lambda 95542 too big: 450.32631578938447
+lambda 95614 too big: 277.4947368420091
+lambda 95660 too big: -205.15789473669918
+lambda 95919 too big: -206.35789473670235
+lambda 99017 too big: 605.9210526311425
+lambda 99185 too big: 253.21578947358466
+lambda 99357 too big: 261.3947368419182
+lambda 99396 too big: -298.7052631580125
+lambda 99825 too big: -206.25789473670204
+lambda 102187 too big: 364.8052631576033
+lambda 102199 too big: 697.2947368433073
+lambda 102651 too big: 668.8736842103526
+lambda 102991 too big: 680.1157894735977
+lambda 105270 too big: 761.2421052651991
+lambda 105773 too big: 248.4736842103892
+lambda 105782 too big: 363.1947368418843
+lambda 2419 too big: 959.5135354268202
+lambda 2535 too big: 201.01194859984264
+lambda 3020 too big: 536.1696511987899
+lambda 4199 too big: 277.1826552019686
+lambda 11325 too big: 210.098366290473
+lambda 11835 too big: 279.0364568573993
+lambda 13379 too big: 208.0569020866408
+lambda 14062 too big: 387.9872458131823
+lambda 16446 too big: 332.1779256564337
+lambda 19370 too big: 246.0915357806751
+lambda 19725 too big: 374.70378059796155
+lambda 28574 too big: 221.6789206814331
+lambda 33491 too big: 296.8288951823126
+lambda 33503 too big: 246.0915357806751
+lambda 34663 too big: 222.71486866534894
+lambda 37875 too big: 306.2728861057914
+lambda 42843 too big: 306.2208985083571
+lambda 42996 too big: 332.1766576662452
+lambda 46313 too big: 320.383080923877
+lambda 49100 too big: 224.5192187038545
+lambda 50482 too big: 257.4527278696122
+lambda 52937 too big: 290.69689463110944
+lambda 59811 too big: 398.84758177682727
+lambda 65345 too big: 503.62287904104795
+lambda 71262 too big: 623.6153265575928
+lambda 74660 too big: 328.29914367001675
+lambda 85973 too big: 320.383080923877
+lambda 89084 too big: 240.76090502832724
+lambda 92400 too big: 290.69689463110944
+lambda 95082 too big: 380.79266948298846
+lambda 95097 too big: 306.7065387503957
+lambda 95143 too big: 231.75183473969
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 1: neg. log cond. likelihood = 714183.1850993037 [4 calls to valueAt]
+Iter 1 evals 1 <D> [11M 5,831E-5] 7,142E5 9,82s |6,020E4| {5,766E-1} 0,000E0 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 2: neg. log cond. likelihood = 574916.9190711351 [5 calls to valueAt]
+Iter 2 evals 4 <D> [M 1,000E0] 5,749E5 13,77s |6,677E4| {6,395E-1} 1,211E-1 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 3: neg. log cond. likelihood = 447904.6925089675 [6 calls to valueAt]
+Iter 3 evals 5 <D> [M 1,000E0] 4,479E5 18,05s |2,604E4| {2,494E-1} 1,982E-1 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 4: neg. log cond. likelihood = 390744.316400408 [7 calls to valueAt]
+Iter 4 evals 6 <D> [M 1,000E0] 3,907E5 21,98s |1,907E4| {1,826E-1} 2,069E-1 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 5: neg. log cond. likelihood = 334949.85809320136 [8 calls to valueAt]
+Iter 5 evals 7 <D> [M 1,000E0] 3,349E5 25,89s |2,592E4| {2,482E-1} 2,264E-1 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 6: neg. log cond. likelihood = 296574.82400680706 [9 calls to valueAt]
+Iter 6 evals 8 <D> [M 1,000E0] 2,966E5 29,95s |1,316E4| {1,260E-1} 2,347E-1 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 7: neg. log cond. likelihood = 260745.30827621062 [10 calls to valueAt]
+Iter 7 evals 9 <D> [M 1,000E0] 2,607E5 33,88s |1,035E4| {9,914E-2} 2,484E-1 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 8: neg. log cond. likelihood = 226118.1245699675 [11 calls to valueAt]
+Iter 8 evals 10 <D> [M 1,000E0] 2,261E5 37,80s |9,378E3| {8,982E-2} 2,698E-1 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 9: neg. log cond. likelihood = 200158.00292835513 [12 calls to valueAt]
+Iter 9 evals 11 <D> [M 1,000E0] 2,002E5 41,74s |1,012E4| {9,690E-2} 2,853E-1 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 10: neg. log cond. likelihood = 190136.57724893707 [14 calls to valueAt]
+Iter 10 evals 12 <D> [1M 4,620E-1] 1,901E5 48,62s |9,504E3| {9,102E-2} 2,756E-1 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 11: neg. log cond. likelihood = 179227.96681191106 [15 calls to valueAt]
+Iter 11 evals 14 <D> [M 1,000E0] 1,792E5 52,52s |4,951E3| {4,741E-2} 2,208E-1 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 12: neg. log cond. likelihood = 166661.91435190514 [16 calls to valueAt]
+Iter 12 evals 15 <D> [M 1,000E0] 1,667E5 56,42s |4,857E3| {4,652E-2} 1,688E-1 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 13: neg. log cond. likelihood = 154290.271140649 [17 calls to valueAt]
+Iter 13 evals 16 <D> [M 1,000E0] 1,543E5 60,33s |7,945E3| {7,609E-2} 1,533E-1 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 14: neg. log cond. likelihood = 143437.23184132227 [18 calls to valueAt]
+Iter 14 evals 17 <D> [M 1,000E0] 1,434E5 64,26s |6,354E3| {6,085E-2} 1,335E-1 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 15: neg. log cond. likelihood = 138174.85294790217 [19 calls to valueAt]
+Iter 15 evals 18 <D> [M 1,000E0] 1,382E5 68,19s |9,105E3| {8,720E-2} 1,146E-1 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 16: neg. log cond. likelihood = 127531.84088987192 [20 calls to valueAt]
+Iter 16 evals 19 <D> [M 1,000E0] 1,275E5 72,10s |8,267E3| {7,918E-2} 1,045E-1 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 17: neg. log cond. likelihood = 122755.03114653962 [22 calls to valueAt]
+Iter 17 evals 20 <D> [2M 5,030E-1] 1,228E5 79,04s |4,360E3| {4,175E-2} 8,420E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 18: neg. log cond. likelihood = 118640.5794789107 [23 calls to valueAt]
+Iter 18 evals 22 <D> [M 1,000E0] 1,186E5 82,96s |3,143E3| {3,010E-2} 6,871E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 19: neg. log cond. likelihood = 115054.65662819763 [24 calls to valueAt]
+Iter 19 evals 23 <D> [M 1,000E0] 1,151E5 86,86s |1,292E4| {1,237E-1} 6,526E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 20: neg. log cond. likelihood = 106562.27608855716 [25 calls to valueAt]
+Iter 20 evals 24 <D> [M 1,000E0] 1,066E5 90,83s |3,754E3| {3,595E-2} 6,819E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 21: neg. log cond. likelihood = 103535.65226225217 [26 calls to valueAt]
+Iter 21 evals 25 <D> [M 1,000E0] 1,035E5 94,73s |2,897E3| {2,775E-2} 6,097E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 22: neg. log cond. likelihood = 97673.127544719 [27 calls to valueAt]
+Iter 22 evals 26 <D> [M 1,000E0] 9,767E4 98,60s |4,993E3| {4,782E-2} 5,797E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 23: neg. log cond. likelihood = 93285.87347052468 [29 calls to valueAt]
+Iter 23 evals 27 <D> [1M 3,735E-1] 9,329E4 105,59s |4,132E3| {3,958E-2} 5,376E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 24: neg. log cond. likelihood = 90368.52872423257 [30 calls to valueAt]
+Iter 24 evals 29 <D> [M 1,000E0] 9,037E4 109,57s |2,312E3| {2,214E-2} 5,290E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 25: neg. log cond. likelihood = 86219.70680762327 [31 calls to valueAt]
+Iter 25 evals 30 <D> [M 1,000E0] 8,622E4 113,51s |2,410E3| {2,308E-2} 4,791E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 26: neg. log cond. likelihood = 82058.52689723113 [32 calls to valueAt]
+Iter 26 evals 31 <D> [M 1,000E0] 8,206E4 117,44s |4,038E3| {3,868E-2} 4,959E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 27: neg. log cond. likelihood = 79921.61276107405 [34 calls to valueAt]
+Iter 27 evals 32 <D> [2M 4,902E-1] 7,992E4 124,36s |3,912E3| {3,747E-2} 4,845E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 28: neg. log cond. likelihood = 76908.89880607868 [35 calls to valueAt]
+Iter 28 evals 34 <D> [M 1,000E0] 7,691E4 128,27s |3,613E3| {3,460E-2} 4,960E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 29: neg. log cond. likelihood = 74452.80312400116 [36 calls to valueAt]
+Iter 29 evals 35 <D> [M 1,000E0] 7,445E4 132,18s |2,874E3| {2,753E-2} 4,313E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 30: neg. log cond. likelihood = 72564.56302194942 [37 calls to valueAt]
+Checking model correctness; x size 305182 , ysize 19
+Constraint 61747 not satisfied emp 0,0095 exp 0,0106 diff 0,001 lambda 2,8219
+Iter 30 evals 36 <D> [M 1,000E0] 7,256E4 136,09s |1,541E3| {1,476E-2} 4,268E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 31: neg. log cond. likelihood = 69464.52147551562 [38 calls to valueAt]
+Iter 31 evals 37 <D> [M 1,000E0] 6,946E4 141,13s |2,623E3| {2,512E-2} 4,061E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 32: neg. log cond. likelihood = 67223.77253943149 [40 calls to valueAt]
+Iter 32 evals 38 <D> [1M 4,119E-1] 6,722E4 148,02s |3,448E3| {3,302E-2} 3,877E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 33: neg. log cond. likelihood = 64848.67843321291 [41 calls to valueAt]
+Iter 33 evals 40 <D> [M 1,000E0] 6,485E4 152,03s |2,073E3| {1,985E-2} 3,935E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 34: neg. log cond. likelihood = 62222.642228213874 [42 calls to valueAt]
+Iter 34 evals 41 <D> [M 1,000E0] 6,222E4 156,00s |2,376E3| {2,275E-2} 3,857E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 35: neg. log cond. likelihood = 60126.42137242808 [43 calls to valueAt]
+Iter 35 evals 42 <D> [M 1,000E0] 6,013E4 159,90s |3,793E3| {3,633E-2} 3,648E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 36: neg. log cond. likelihood = 58270.45476318967 [45 calls to valueAt]
+Iter 36 evals 43 <D> [1M 3,474E-1] 5,827E4 166,81s |2,825E3| {2,706E-2} 3,716E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 37: neg. log cond. likelihood = 56685.46102247865 [46 calls to valueAt]
+Iter 37 evals 45 <D> [M 1,000E0] 5,669E4 170,73s |1,603E3| {1,535E-2} 3,568E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 38: neg. log cond. likelihood = 54644.08160436304 [47 calls to valueAt]
+Iter 38 evals 46 <D> [M 1,000E0] 5,464E4 174,64s |1,283E3| {1,229E-2} 3,625E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 39: neg. log cond. likelihood = 53653.53475754568 [48 calls to valueAt]
+Iter 39 evals 47 <D> [M 1,000E0] 5,365E4 178,53s |4,148E3| {3,972E-2} 3,525E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 40: neg. log cond. likelihood = 51838.402199142925 [50 calls to valueAt]
+Iter 40 evals 48 <D> [2M 4,906E-1] 5,184E4 185,40s |2,471E3| {2,367E-2} 3,400E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 41: neg. log cond. likelihood = 50442.36063379297 [51 calls to valueAt]
+Iter 41 evals 50 <D> [M 1,000E0] 5,044E4 189,26s |1,471E3| {1,409E-2} 3,327E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 42: neg. log cond. likelihood = 48467.401225478476 [52 calls to valueAt]
+Iter 42 evals 51 <D> [M 1,000E0] 4,847E4 193,10s |1,526E3| {1,461E-2} 3,380E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 43: neg. log cond. likelihood = 46902.40918738114 [53 calls to valueAt]
+Iter 43 evals 52 <D> [M 1,000E0] 4,690E4 196,94s |1,997E3| {1,913E-2} 3,266E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 44: neg. log cond. likelihood = 45114.64279765247 [54 calls to valueAt]
+Iter 44 evals 53 <D> [M 1,000E0] 4,511E4 201,10s |1,469E3| {1,407E-2} 3,327E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 45: neg. log cond. likelihood = 43316.206221576576 [55 calls to valueAt]
+Iter 45 evals 54 <D> [M 1,000E0] 4,332E4 205,05s |1,641E3| {1,572E-2} 3,452E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 46: neg. log cond. likelihood = 41892.788794379594 [56 calls to valueAt]
+Iter 46 evals 55 <D> [M 1,000E0] 4,189E4 208,95s |3,421E3| {3,276E-2} 3,531E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 47: neg. log cond. likelihood = 41268.45639477264 [58 calls to valueAt]
+Iter 47 evals 56 <D> [1M 2,381E-1] 4,127E4 215,90s |2,095E3| {2,006E-2} 3,241E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 48: neg. log cond. likelihood = 40510.94583181529 [59 calls to valueAt]
+Iter 48 evals 58 <D> [M 1,000E0] 4,051E4 219,82s |1,203E3| {1,152E-2} 3,244E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 49: neg. log cond. likelihood = 39662.132273382915 [60 calls to valueAt]
+Iter 49 evals 59 <D> [M 1,000E0] 3,966E4 223,81s |9,847E2| {9,431E-3} 3,070E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 50: neg. log cond. likelihood = 38685.63914273639 [61 calls to valueAt]
+Iter 50 evals 60 <D> [M 1,000E0] 3,869E4 228,19s |1,723E3| {1,651E-2} 3,039E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 51: neg. log cond. likelihood = 37868.1317420933 [63 calls to valueAt]
+Iter 51 evals 61 <D> [1M 4,193E-1] 3,787E4 235,12s |2,434E3| {2,331E-2} 2,799E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 52: neg. log cond. likelihood = 36855.17698740444 [64 calls to valueAt]
+Iter 52 evals 63 <D> [M 1,000E0] 3,686E4 239,09s |9,787E2| {9,374E-3} 2,726E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 53: neg. log cond. likelihood = 36036.36983516148 [65 calls to valueAt]
+Iter 53 evals 64 <D> [M 1,000E0] 3,604E4 243,01s |7,808E2| {7,478E-3} 2,519E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 54: neg. log cond. likelihood = 34995.21165542795 [66 calls to valueAt]
+Iter 54 evals 65 <D> [M 1,000E0] 3,500E4 246,89s |8,731E2| {8,363E-3} 2,378E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 55: neg. log cond. likelihood = 33747.122466149456 [67 calls to valueAt]
+Iter 55 evals 66 <D> [M 1,000E0] 3,375E4 250,90s |1,510E3| {1,446E-2} 2,414E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 56: neg. log cond. likelihood = 32859.679321135016 [68 calls to valueAt]
+Iter 56 evals 67 <D> [M 1,000E0] 3,286E4 254,80s |1,575E3| {1,509E-2} 2,559E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 57: neg. log cond. likelihood = 31799.15989646572 [69 calls to valueAt]
+Iter 57 evals 68 <D> [M 1,000E0] 3,180E4 258,69s |1,319E3| {1,263E-2} 2,740E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 58: neg. log cond. likelihood = 31214.44589174536 [71 calls to valueAt]
+Iter 58 evals 69 <D> [1M 3,845E-1] 3,121E4 265,62s |1,993E3| {1,909E-2} 2,706E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 59: neg. log cond. likelihood = 30686.882811071613 [72 calls to valueAt]
+Iter 59 evals 71 <D> [M 1,000E0] 3,069E4 269,56s |2,188E3| {2,095E-2} 2,607E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 60: neg. log cond. likelihood = 30069.994512093534 [73 calls to valueAt]
+Checking model correctness; x size 305182 , ysize 19
+Iter 60 evals 72 <D> [M 1,000E0] 3,007E4 273,46s |7,313E2| {7,004E-3} 2,593E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 61: neg. log cond. likelihood = 29523.338978976382 [74 calls to valueAt]
+Iter 61 evals 73 <D> [M 1,000E0] 2,952E4 278,31s |5,131E2| {4,914E-3} 2,483E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 62: neg. log cond. likelihood = 28675.96009845101 [75 calls to valueAt]
+Iter 62 evals 74 <D> [M 1,000E0] 2,868E4 282,24s |1,083E3| {1,037E-2} 2,567E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 63: neg. log cond. likelihood = 28423.23815012145 [77 calls to valueAt]
+Iter 63 evals 75 <D> [1M 1,823E-1] 2,842E4 289,12s |1,093E3| {1,047E-2} 2,312E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 64: neg. log cond. likelihood = 27614.8604285299 [78 calls to valueAt]
+Iter 64 evals 77 <D> [M 1,000E0] 2,761E4 293,00s |8,332E2| {7,980E-3} 2,221E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 65: neg. log cond. likelihood = 27105.98979338501 [79 calls to valueAt]
+Iter 65 evals 78 <D> [M 1,000E0] 2,711E4 296,94s |6,337E2| {6,069E-3} 2,123E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 66: neg. log cond. likelihood = 26758.696571529952 [80 calls to valueAt]
+Iter 66 evals 79 <D> [M 1,000E0] 2,676E4 300,86s |1,659E3| {1,589E-2} 1,884E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 67: neg. log cond. likelihood = 26097.5243604462 [81 calls to valueAt]
+Iter 67 evals 80 <D> [M 1,000E0] 2,610E4 304,82s |7,064E2| {6,766E-3} 1,961E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 68: neg. log cond. likelihood = 25427.240062208137 [82 calls to valueAt]
+Iter 68 evals 81 <D> [M 1,000E0] 2,543E4 308,71s |9,129E2| {8,743E-3} 2,069E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 69: neg. log cond. likelihood = 25021.199789184957 [84 calls to valueAt]
+Iter 69 evals 82 <D> [1M 3,771E-1] 2,502E4 315,60s |1,564E3| {1,498E-2} 2,018E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 70: neg. log cond. likelihood = 24404.701058425304 [85 calls to valueAt]
+Iter 70 evals 84 <D> [M 1,000E0] 2,440E4 319,57s |1,804E3| {1,728E-2} 2,097E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 71: neg. log cond. likelihood = 24058.430854567105 [87 calls to valueAt]
+Iter 71 evals 85 <D> [2M 5,074E-1] 2,406E4 326,56s |8,770E2| {8,400E-3} 1,919E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 72: neg. log cond. likelihood = 23755.68072539198 [88 calls to valueAt]
+Iter 72 evals 87 <D> [M 1,000E0] 2,376E4 330,46s |4,531E2| {4,339E-3} 1,965E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 73: neg. log cond. likelihood = 23230.896018174346 [89 calls to valueAt]
+Iter 73 evals 88 <D> [M 1,000E0] 2,323E4 334,39s |7,454E2| {7,139E-3} 1,887E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 74: neg. log cond. likelihood = 22755.919293967472 [90 calls to valueAt]
+Iter 74 evals 89 <D> [M 1,000E0] 2,276E4 338,30s |1,190E3| {1,140E-2} 1,912E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 75: neg. log cond. likelihood = 22420.046872050025 [92 calls to valueAt]
+Iter 75 evals 90 <D> [1M 4,963E-1] 2,242E4 345,15s |1,186E3| {1,136E-2} 1,935E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 76: neg. log cond. likelihood = 21870.62725199071 [93 calls to valueAt]
+Iter 76 evals 92 <D> [M 1,000E0] 2,187E4 350,14s |6,891E2| {6,600E-3} 1,933E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 77: neg. log cond. likelihood = 21500.789416075862 [94 calls to valueAt]
+Iter 77 evals 93 <D> [M 1,000E0] 2,150E4 355,12s |3,897E2| {3,732E-3} 1,826E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 78: neg. log cond. likelihood = 20867.376493874883 [95 calls to valueAt]
+Iter 78 evals 94 <D> [M 1,000E0] 2,087E4 360,04s |4,176E2| {4,000E-3} 1,991E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 79: neg. log cond. likelihood = 20412.32182642445 [96 calls to valueAt]
+Iter 79 evals 95 <D> [M 1,000E0] 2,041E4 364,38s |1,651E3| {1,581E-2} 1,956E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 80: neg. log cond. likelihood = 19731.58247307741 [97 calls to valueAt]
+Iter 80 evals 96 <D> [M 1,000E0] 1,973E4 368,45s |4,458E2| {4,270E-3} 2,193E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 81: neg. log cond. likelihood = 19248.826212672197 [98 calls to valueAt]
+Iter 81 evals 97 <D> [M 1,000E0] 1,925E4 372,35s |6,688E2| {6,405E-3} 2,341E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 82: neg. log cond. likelihood = 18989.90119202295 [100 calls to valueAt]
+Iter 82 evals 98 <D> [1M 4,217E-1] 1,899E4 380,37s |1,377E3| {1,318E-2} 2,233E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 83: neg. log cond. likelihood = 18722.613565096006 [101 calls to valueAt]
+Iter 83 evals 100 <D> [M 1,000E0] 1,872E4 385,04s |1,589E3| {1,522E-2} 2,154E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 84: neg. log cond. likelihood = 18264.662439347132 [102 calls to valueAt]
+Iter 84 evals 101 <D> [M 1,000E0] 1,826E4 389,60s |4,378E2| {4,193E-3} 2,275E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 85: neg. log cond. likelihood = 18028.466485740482 [103 calls to valueAt]
+Iter 85 evals 102 <D> [M 1,000E0] 1,803E4 393,79s |3,855E2| {3,692E-3} 2,131E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 86: neg. log cond. likelihood = 17648.50549774417 [104 calls to valueAt]
+Iter 86 evals 103 <D> [M 1,000E0] 1,765E4 398,29s |9,646E2| {9,239E-3} 2,183E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 87: neg. log cond. likelihood = 17283.61262149949 [105 calls to valueAt]
+Iter 87 evals 104 <D> [M 1,000E0] 1,728E4 402,93s |9,573E2| {9,169E-3} 2,074E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 88: neg. log cond. likelihood = 16979.880316812498 [106 calls to valueAt]
+Iter 88 evals 105 <D> [M 1,000E0] 1,698E4 407,05s |6,371E2| {6,102E-3} 2,021E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 89: neg. log cond. likelihood = 16778.798896847893 [107 calls to valueAt]
+Iter 89 evals 106 <D> [M 1,000E0] 1,678E4 411,46s |1,099E3| {1,052E-2} 1,760E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 90: neg. log cond. likelihood = 16501.005508253696 [108 calls to valueAt]
+Checking model correctness; x size 305182 , ysize 19
+Iter 90 evals 107 <D> [M 1,000E0] 1,650E4 415,67s |1,443E3| {1,382E-2} 1,665E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 91: neg. log cond. likelihood = 16228.37826618251 [109 calls to valueAt]
+Iter 91 evals 108 <D> [M 1,000E0] 1,623E4 420,93s |6,401E2| {6,131E-3} 1,702E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 92: neg. log cond. likelihood = 15950.342405145902 [110 calls to valueAt]
+Iter 92 evals 109 <D> [M 1,000E0] 1,595E4 425,32s |4,715E2| {4,516E-3} 1,738E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 93: neg. log cond. likelihood = 15605.876870549971 [111 calls to valueAt]
+Iter 93 evals 110 <D> [M 1,000E0] 1,561E4 429,80s |8,193E2| {7,847E-3} 1,704E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 94: neg. log cond. likelihood = 15339.00980354956 [112 calls to valueAt]
+Iter 94 evals 111 <D> [M 1,000E0] 1,534E4 436,15s |1,534E3| {1,469E-2} 1,753E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 95: neg. log cond. likelihood = 15065.46055636891 [114 calls to valueAt]
+Iter 95 evals 112 <D> [1M 3,629E-1] 1,507E4 444,08s |3,572E2| {3,421E-3} 1,715E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 96: neg. log cond. likelihood = 14905.452664315735 [115 calls to valueAt]
+Iter 96 evals 114 <D> [M 1,000E0] 1,491E4 448,37s |3,767E2| {3,608E-3} 1,595E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 97: neg. log cond. likelihood = 14559.827238824324 [116 calls to valueAt]
+Iter 97 evals 115 <D> [M 1,000E0] 1,456E4 452,57s |3,791E2| {3,631E-3} 1,662E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 98: neg. log cond. likelihood = 14233.707654746753 [117 calls to valueAt]
+Iter 98 evals 116 <D> [M 1,000E0] 1,423E4 456,51s |4,732E2| {4,532E-3} 1,788E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 99: neg. log cond. likelihood = 14036.93480823952 [119 calls to valueAt]
+Iter 99 evals 117 <D> [1M 3,004E-1] 1,404E4 465,18s |6,216E2| {5,953E-3} 1,755E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 100: neg. log cond. likelihood = 13729.430317486263 [120 calls to valueAt]
+Iter 100 evals 119 <D> [M 1,000E0] 1,373E4 470,01s |3,026E2| {2,898E-3} 1,820E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 101: neg. log cond. likelihood = 13592.81423336613 [121 calls to valueAt]
+Iter 101 evals 120 <D> [M 1,000E0] 1,359E4 474,00s |6,980E2| {6,685E-3} 1,734E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 102: neg. log cond. likelihood = 13302.035084090821 [122 calls to valueAt]
+Iter 102 evals 121 <D> [M 1,000E0] 1,330E4 478,05s |3,118E2| {2,987E-3} 1,732E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 103: neg. log cond. likelihood = 13089.462509745763 [123 calls to valueAt]
+Iter 103 evals 122 <D> [M 1,000E0] 1,309E4 482,19s |3,527E2| {3,378E-3} 1,719E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 104: neg. log cond. likelihood = 12961.288999817329 [124 calls to valueAt]
+Iter 104 evals 123 <D> [M 1,000E0] 1,296E4 486,95s |1,318E3| {1,263E-2} 1,623E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 105: neg. log cond. likelihood = 12659.838680901696 [125 calls to valueAt]
+Iter 105 evals 124 <D> [M 1,000E0] 1,266E4 491,17s |3,399E2| {3,256E-3} 1,774E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 106: neg. log cond. likelihood = 12539.80900172679 [126 calls to valueAt]
+Iter 106 evals 125 <D> [M 1,000E0] 1,254E4 495,17s |7,037E2| {6,740E-3} 1,611E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 107: neg. log cond. likelihood = 12373.365921922883 [127 calls to valueAt]
+Iter 107 evals 126 <D> [M 1,000E0] 1,237E4 499,50s |5,350E2| {5,124E-3} 1,504E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 108: neg. log cond. likelihood = 12276.962254321985 [129 calls to valueAt]
+Iter 108 evals 127 <D> [1M 3,255E-1] 1,228E4 506,87s |6,515E2| {6,240E-3} 1,434E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 109: neg. log cond. likelihood = 12177.051460393479 [130 calls to valueAt]
+Iter 109 evals 129 <D> [M 1,000E0] 1,218E4 510,82s |3,841E2| {3,679E-3} 1,275E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 110: neg. log cond. likelihood = 11952.79128335595 [131 calls to valueAt]
+Iter 110 evals 130 <D> [M 1,000E0] 1,195E4 514,74s |3,403E2| {3,260E-3} 1,372E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 111: neg. log cond. likelihood = 11769.337037850997 [132 calls to valueAt]
+Iter 111 evals 131 <D> [M 1,000E0] 1,177E4 518,83s |4,839E2| {4,635E-3} 1,302E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 112: neg. log cond. likelihood = 11629.928773739852 [134 calls to valueAt]
+Iter 112 evals 132 <D> [1M 3,369E-1] 1,163E4 525,74s |6,819E2| {6,531E-3} 1,255E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 113: neg. log cond. likelihood = 11346.104322467632 [135 calls to valueAt]
+Iter 113 evals 134 <D> [M 1,000E0] 1,135E4 529,88s |2,963E2| {2,838E-3} 1,424E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 114: neg. log cond. likelihood = 11199.511889861635 [136 calls to valueAt]
+Iter 114 evals 135 <D> [M 1,000E0] 1,120E4 533,80s |2,305E2| {2,207E-3} 1,304E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 115: neg. log cond. likelihood = 11014.572142721994 [137 calls to valueAt]
+Iter 115 evals 136 <D> [M 1,000E0] 1,101E4 538,47s |4,233E2| {4,054E-3} 1,385E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 116: neg. log cond. likelihood = 10875.909950794643 [138 calls to valueAt]
+Iter 116 evals 137 <D> [M 1,000E0] 1,088E4 542,65s |4,096E2| {3,923E-3} 1,377E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 117: neg. log cond. likelihood = 10749.458689256464 [139 calls to valueAt]
+Iter 117 evals 138 <D> [M 1,000E0] 1,075E4 546,81s |6,385E2| {6,115E-3} 1,421E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 118: neg. log cond. likelihood = 10621.470331246663 [140 calls to valueAt]
+Iter 118 evals 139 <D> [M 1,000E0] 1,062E4 550,88s |6,980E2| {6,685E-3} 1,465E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 119: neg. log cond. likelihood = 10567.900927138748 [141 calls to valueAt]
+Iter 119 evals 140 <D> [M 1,000E0] 1,057E4 555,08s |8,811E2| {8,438E-3} 1,310E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 120: neg. log cond. likelihood = 10412.537560191387 [142 calls to valueAt]
+Checking model correctness; x size 305182 , ysize 19
+Iter 120 evals 141 <D> [M 1,000E0] 1,041E4 559,24s |2,828E2| {2,709E-3} 1,303E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 121: neg. log cond. likelihood = 10320.736442938647 [143 calls to valueAt]
+Iter 121 evals 142 <D> [M 1,000E0] 1,032E4 567,13s |1,818E2| {1,741E-3} 1,269E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 122: neg. log cond. likelihood = 10182.886195886958 [144 calls to valueAt]
+Iter 122 evals 143 <D> [M 1,000E0] 1,018E4 572,33s |3,980E2| {3,811E-3} 1,142E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 123: neg. log cond. likelihood = 10047.00545026489 [145 calls to valueAt]
+Iter 123 evals 144 <D> [M 1,000E0] 1,005E4 576,52s |2,114E2| {2,025E-3} 1,147E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 124: neg. log cond. likelihood = 9923.757573629571 [146 calls to valueAt]
+Iter 124 evals 145 <D> [M 1,000E0] 9,924E3 582,07s |2,765E2| {2,648E-3} 1,099E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 125: neg. log cond. likelihood = 9775.364387019963 [147 calls to valueAt]
+Iter 125 evals 146 <D> [M 1,000E0] 9,775E3 588,73s |1,461E2| {1,399E-3} 1,126E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 126: neg. log cond. likelihood = 9657.578899408349 [148 calls to valueAt]
+Iter 126 evals 147 <D> [M 1,000E0] 9,658E3 594,94s |4,204E2| {4,026E-3} 1,131E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 127: neg. log cond. likelihood = 9531.443375465025 [149 calls to valueAt]
+Iter 127 evals 148 <D> [M 1,000E0] 9,531E3 600,04s |4,250E2| {4,071E-3} 1,144E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 128: neg. log cond. likelihood = 9428.639922679564 [150 calls to valueAt]
+Iter 128 evals 149 <D> [M 1,000E0] 9,429E3 604,12s |3,076E2| {2,946E-3} 1,208E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 129: neg. log cond. likelihood = 9360.795526440485 [151 calls to valueAt]
+Iter 129 evals 150 <D> [M 1,000E0] 9,361E3 608,25s |7,070E2| {6,771E-3} 1,124E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 130: neg. log cond. likelihood = 9282.355882176482 [152 calls to valueAt]
+Iter 130 evals 151 <D> [M 1,000E0] 9,282E3 612,44s |3,598E2| {3,446E-3} 1,119E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 131: neg. log cond. likelihood = 9200.108005562211 [153 calls to valueAt]
+Iter 131 evals 152 <D> [M 1,000E0] 9,200E3 616,38s |1,511E2| {1,447E-3} 1,068E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 132: neg. log cond. likelihood = 9119.09108354228 [154 calls to valueAt]
+Iter 132 evals 153 <D> [M 1,000E0] 9,119E3 620,30s |3,780E2| {3,621E-3} 1,018E-2 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 133: neg. log cond. likelihood = 9046.697033684295 [156 calls to valueAt]
+Iter 133 evals 154 <D> [2M 5,186E-1] 9,047E3 627,21s |3,485E2| {3,338E-3} 9,695E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 134: neg. log cond. likelihood = 8987.654603889554 [157 calls to valueAt]
+Iter 134 evals 156 <D> [M 1,000E0] 8,988E3 631,13s |2,069E2| {1,982E-3} 8,764E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 135: neg. log cond. likelihood = 8843.152492208159 [158 calls to valueAt]
+Iter 135 evals 157 <D> [M 1,000E0] 8,843E3 635,06s |1,753E2| {1,679E-3} 9,210E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 136: neg. log cond. likelihood = 8809.944844784328 [159 calls to valueAt]
+Iter 136 evals 158 <D> [M 1,000E0] 8,810E3 638,97s |3,629E2| {3,476E-3} 8,190E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 137: neg. log cond. likelihood = 8701.244546155753 [160 calls to valueAt]
+Iter 137 evals 159 <D> [M 1,000E0] 8,701E3 642,84s |2,288E2| {2,191E-3} 8,360E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 138: neg. log cond. likelihood = 8655.653632001893 [162 calls to valueAt]
+Iter 138 evals 160 <D> [1M 4,214E-1] 8,656E3 649,65s |1,802E2| {1,726E-3} 8,147E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 139: neg. log cond. likelihood = 8583.646788548407 [163 calls to valueAt]
+Iter 139 evals 162 <D> [M 1,000E0] 8,584E3 653,59s |1,252E2| {1,199E-3} 8,140E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 140: neg. log cond. likelihood = 8513.719153009095 [164 calls to valueAt]
+Iter 140 evals 163 <D> [M 1,000E0] 8,514E3 657,71s |3,242E2| {3,105E-3} 8,062E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 141: neg. log cond. likelihood = 8477.210636915197 [166 calls to valueAt]
+Iter 141 evals 164 <D> [1M 4,451E-1] 8,477E3 664,83s |2,556E2| {2,448E-3} 7,572E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 142: neg. log cond. likelihood = 8424.480948545774 [167 calls to valueAt]
+Iter 142 evals 166 <D> [M 1,000E0] 8,424E3 670,61s |1,158E2| {1,109E-3} 7,386E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 143: neg. log cond. likelihood = 8348.217426220152 [168 calls to valueAt]
+Iter 143 evals 167 <D> [M 1,000E0] 8,348E3 675,88s |1,440E2| {1,380E-3} 7,660E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 144: neg. log cond. likelihood = 8279.985589036076 [169 calls to valueAt]
+Iter 144 evals 168 <D> [M 1,000E0] 8,280E3 681,60s |2,890E2| {2,768E-3} 6,802E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 145: neg. log cond. likelihood = 8257.694158546316 [170 calls to valueAt]
+Iter 145 evals 169 <D> [M 1,000E0] 8,258E3 686,99s |6,218E2| {5,955E-3} 6,688E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 146: neg. log cond. likelihood = 8180.927993517668 [171 calls to valueAt]
+Iter 146 evals 170 <D> [M 1,000E0] 8,181E3 692,63s |2,540E2| {2,432E-3} 6,360E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 147: neg. log cond. likelihood = 8120.05772007432 [172 calls to valueAt]
+Iter 147 evals 171 <D> [M 1,000E0] 8,120E3 698,65s |1,525E2| {1,460E-3} 6,596E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 148: neg. log cond. likelihood = 8064.697172928233 [173 calls to valueAt]
+Iter 148 evals 172 <D> [M 1,000E0] 8,065E3 704,25s |7,394E1| {7,082E-4} 6,435E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 149: neg. log cond. likelihood = 7981.806529477522 [174 calls to valueAt]
+Iter 149 evals 173 <D> [M 1,000E0] 7,982E3 708,82s |1,868E2| {1,789E-3} 6,664E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 150: neg. log cond. likelihood = 7953.389456461567 [175 calls to valueAt]
+Checking model correctness; x size 305182 , ysize 19
+ Lambda too big 104.09753376391158
+ empirical 0.018846229572750874 expected 0.018846229572750874
+Iter 150 evals 174 <D> [M 1,000E0] 7,953E3 713,69s |2,711E2| {2,597E-3} 6,586E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 151: neg. log cond. likelihood = 7882.703315786318 [176 calls to valueAt]
+Iter 151 evals 175 <D> [M 1,000E0] 7,883E3 720,01s |1,852E2| {1,774E-3} 6,873E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 152: neg. log cond. likelihood = 7856.256011117065 [178 calls to valueAt]
+Iter 152 evals 176 <D> [1M 3,800E-1] 7,856E3 727,91s |1,861E2| {1,782E-3} 6,262E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 153: neg. log cond. likelihood = 7825.3258697205065 [179 calls to valueAt]
+Iter 153 evals 178 <D> [M 1,000E0] 7,825E3 732,50s |1,758E2| {1,684E-3} 5,810E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 154: neg. log cond. likelihood = 7777.650452925926 [180 calls to valueAt]
+Iter 154 evals 179 <D> [M 1,000E0] 7,778E3 738,60s |1,604E2| {1,537E-3} 6,172E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 155: neg. log cond. likelihood = 7740.345522597336 [181 calls to valueAt]
+Iter 155 evals 180 <D> [M 1,000E0] 7,740E3 743,18s |1,392E2| {1,333E-3} 5,692E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 156: neg. log cond. likelihood = 7696.060835182821 [182 calls to valueAt]
+Iter 156 evals 181 <D> [M 1,000E0] 7,696E3 747,50s |2,977E2| {2,851E-3} 5,509E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 157: neg. log cond. likelihood = 7672.600019713932 [183 calls to valueAt]
+Iter 157 evals 182 <D> [M 1,000E0] 7,673E3 753,04s |2,983E2| {2,857E-3} 5,110E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 158: neg. log cond. likelihood = 7621.77884824085 [184 calls to valueAt]
+Iter 158 evals 183 <D> [M 1,000E0] 7,622E3 758,16s |9,797E1| {9,383E-4} 4,724E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 159: neg. log cond. likelihood = 7593.398554770422 [185 calls to valueAt]
+Iter 159 evals 184 <D> [M 1,000E0] 7,593E3 762,56s |9,342E1| {8,948E-4} 4,741E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 160: neg. log cond. likelihood = 7547.481022472171 [186 calls to valueAt]
+Iter 160 evals 185 <D> [M 1,000E0] 7,547E3 767,59s |1,490E2| {1,427E-3} 4,442E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 161: neg. log cond. likelihood = 7489.338874193178 [187 calls to valueAt]
+Iter 161 evals 186 <D> [M 1,000E0] 7,489E3 772,01s |2,038E2| {1,952E-3} 4,899E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 162: neg. log cond. likelihood = 7437.594179753061 [188 calls to valueAt]
+Iter 162 evals 187 <D> [M 1,000E0] 7,438E3 776,89s |1,077E2| {1,031E-3} 5,213E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 163: neg. log cond. likelihood = 7402.4980413840985 [189 calls to valueAt]
+Iter 163 evals 188 <D> [M 1,000E0] 7,402E3 781,49s |1,352E2| {1,294E-3} 5,068E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 164: neg. log cond. likelihood = 7381.537400791888 [191 calls to valueAt]
+Iter 164 evals 189 <D> [1M 3,461E-1] 7,382E3 789,09s |2,735E2| {2,619E-3} 4,861E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 165: neg. log cond. likelihood = 7346.641637254377 [192 calls to valueAt]
+Iter 165 evals 191 <D> [M 1,000E0] 7,347E3 793,73s |9,123E1| {8,738E-4} 4,756E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 166: neg. log cond. likelihood = 7312.296493269283 [193 calls to valueAt]
+Iter 166 evals 192 <D> [M 1,000E0] 7,312E3 798,77s |7,576E1| {7,256E-4} 4,927E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 167: neg. log cond. likelihood = 7280.368676886561 [194 calls to valueAt]
+Iter 167 evals 193 <D> [M 1,000E0] 7,280E3 804,14s |1,679E2| {1,608E-3} 4,689E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 168: neg. log cond. likelihood = 7250.771245084934 [195 calls to valueAt]
+Iter 168 evals 194 <D> [M 1,000E0] 7,251E3 808,78s |1,059E2| {1,015E-3} 4,725E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 169: neg. log cond. likelihood = 7238.293760449957 [196 calls to valueAt]
+Iter 169 evals 195 <D> [M 1,000E0] 7,238E3 813,20s |3,041E2| {2,913E-3} 4,272E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 170: neg. log cond. likelihood = 7202.445767000907 [197 calls to valueAt]
+Iter 170 evals 196 <D> [M 1,000E0] 7,202E3 817,36s |7,583E1| {7,262E-4} 3,983E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 171: neg. log cond. likelihood = 7177.959988815288 [198 calls to valueAt]
+Iter 171 evals 197 <D> [M 1,000E0] 7,178E3 822,23s |1,066E2| {1,021E-3} 3,617E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 172: neg. log cond. likelihood = 7145.730410901663 [199 calls to valueAt]
+Iter 172 evals 198 <D> [M 1,000E0] 7,146E3 827,84s |1,563E2| {1,497E-3} 3,593E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 173: neg. log cond. likelihood = 7115.827850581654 [200 calls to valueAt]
+Iter 173 evals 199 <D> [M 1,000E0] 7,116E3 831,97s |1,313E2| {1,257E-3} 3,734E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 174: neg. log cond. likelihood = 7086.64932708494 [201 calls to valueAt]
+Iter 174 evals 200 <D> [M 1,000E0] 7,087E3 839,23s |1,767E2| {1,692E-3} 3,669E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 175: neg. log cond. likelihood = 7073.224521763542 [203 calls to valueAt]
+Iter 175 evals 201 <D> [1M 3,394E-1] 7,073E3 850,03s |1,296E2| {1,241E-3} 3,380E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 176: neg. log cond. likelihood = 7054.330463978234 [204 calls to valueAt]
+Iter 176 evals 203 <D> [M 1,000E0] 7,054E3 856,06s |9,873E1| {9,456E-4} 3,204E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 177: neg. log cond. likelihood = 7031.8629932696 [205 calls to valueAt]
+Iter 177 evals 204 <D> [M 1,000E0] 7,032E3 860,78s |4,634E1| {4,438E-4} 3,113E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 178: neg. log cond. likelihood = 7002.412970176782 [206 calls to valueAt]
+Iter 178 evals 205 <D> [M 1,000E0] 7,002E3 865,27s |6,034E1| {5,779E-4} 3,369E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 179: neg. log cond. likelihood = 6969.251826052833 [207 calls to valueAt]
+Iter 179 evals 206 <D> [M 1,000E0] 6,969E3 869,35s |1,200E2| {1,149E-3} 3,346E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 180: neg. log cond. likelihood = 6941.557229456323 [208 calls to valueAt]
+Checking model correctness; x size 305182 , ysize 19
+ Lambda too big 110.10961068338626
+ empirical 0.018846229572750874 expected 0.018846229572750874
+Iter 180 evals 207 <D> [M 1,000E0] 6,942E3 873,63s |2,227E2| {2,132E-3} 3,406E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 181: neg. log cond. likelihood = 6921.690989208849 [209 calls to valueAt]
+Iter 181 evals 208 <D> [M 1,000E0] 6,922E3 878,77s |2,053E2| {1,966E-3} 3,237E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 182: neg. log cond. likelihood = 6888.560811017125 [210 calls to valueAt]
+Iter 182 evals 209 <D> [M 1,000E0] 6,889E3 883,18s |6,241E1| {5,977E-4} 3,299E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 183: neg. log cond. likelihood = 6869.1733543058035 [211 calls to valueAt]
+Iter 183 evals 210 <D> [M 1,000E0] 6,869E3 887,90s |9,253E1| {8,862E-4} 3,166E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 184: neg. log cond. likelihood = 6847.7098670641635 [212 calls to valueAt]
+Iter 184 evals 211 <D> [M 1,000E0] 6,848E3 892,93s |1,598E2| {1,530E-3} 3,293E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 185: neg. log cond. likelihood = 6823.87469540368 [213 calls to valueAt]
+Iter 185 evals 212 <D> [M 1,000E0] 6,824E3 897,46s |1,039E2| {9,951E-4} 3,377E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 186: neg. log cond. likelihood = 6798.192388284751 [214 calls to valueAt]
+Iter 186 evals 213 <D> [M 1,000E0] 6,798E3 901,47s |4,979E1| {4,769E-4} 3,437E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 187: neg. log cond. likelihood = 6769.770969023432 [215 calls to valueAt]
+Iter 187 evals 214 <D> [M 1,000E0] 6,770E3 905,41s |1,974E2| {1,890E-3} 3,436E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 188: neg. log cond. likelihood = 6756.35452874838 [217 calls to valueAt]
+Iter 188 evals 215 <D> [2M 5,059E-1] 6,756E3 912,60s |1,608E2| {1,540E-3} 3,151E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 189: neg. log cond. likelihood = 6732.969585452737 [218 calls to valueAt]
+Iter 189 evals 217 <D> [M 1,000E0] 6,733E3 916,60s |1,118E2| {1,071E-3} 3,098E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 190: neg. log cond. likelihood = 6714.559337648884 [219 calls to valueAt]
+Iter 190 evals 218 <D> [M 1,000E0] 6,715E3 920,91s |5,943E1| {5,692E-4} 3,085E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 191: neg. log cond. likelihood = 6684.28047673842 [220 calls to valueAt]
+Iter 191 evals 219 <D> [M 1,000E0] 6,684E3 924,81s |8,660E1| {8,294E-4} 3,056E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 192: neg. log cond. likelihood = 6671.717814690833 [221 calls to valueAt]
+Iter 192 evals 220 <D> [M 1,000E0] 6,672E3 929,62s |2,224E2| {2,130E-3} 2,960E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 193: neg. log cond. likelihood = 6641.799752550011 [222 calls to valueAt]
+Iter 193 evals 221 <D> [M 1,000E0] 6,642E3 935,78s |7,116E1| {6,815E-4} 3,100E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 194: neg. log cond. likelihood = 6625.774103428869 [223 calls to valueAt]
+Iter 194 evals 222 <D> [M 1,000E0] 6,626E3 941,17s |1,470E2| {1,407E-3} 2,990E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 195: neg. log cond. likelihood = 6601.5538126503225 [224 calls to valueAt]
+Iter 195 evals 223 <D> [M 1,000E0] 6,602E3 946,12s |1,439E2| {1,378E-3} 2,979E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 196: neg. log cond. likelihood = 6587.935959218133 [225 calls to valueAt]
+Iter 196 evals 224 <D> [M 1,000E0] 6,588E3 951,57s |1,363E2| {1,305E-3} 2,760E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 197: neg. log cond. likelihood = 6570.6116928280035 [226 calls to valueAt]
+Iter 197 evals 225 <D> [M 1,000E0] 6,571E3 955,90s |7,968E1| {7,631E-4} 2,827E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 198: neg. log cond. likelihood = 6550.954886414858 [227 calls to valueAt]
+Iter 198 evals 226 <D> [M 1,000E0] 6,551E3 962,31s |6,556E1| {6,279E-4} 2,778E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 199: neg. log cond. likelihood = 6529.696835658576 [228 calls to valueAt]
+Iter 199 evals 227 <D> [M 1,000E0] 6,530E3 969,98s |1,218E2| {1,166E-3} 2,831E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 200: neg. log cond. likelihood = 6516.626049149265 [230 calls to valueAt]
+Iter 200 evals 228 <D> [1M 1,857E-1] 6,517E3 981,35s |1,609E2| {1,541E-3} 2,573E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 201: neg. log cond. likelihood = 6498.94366149909 [231 calls to valueAt]
+Iter 201 evals 230 <D> [M 1,000E0] 6,499E3 988,10s |4,148E1| {3,973E-4} 2,658E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 202: neg. log cond. likelihood = 6486.087588113225 [232 calls to valueAt]
+Iter 202 evals 231 <D> [M 1,000E0] 6,486E3 993,83s |4,889E1| {4,683E-4} 2,401E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 203: neg. log cond. likelihood = 6464.884879024298 [233 calls to valueAt]
+Iter 203 evals 232 <D> [M 1,000E0] 6,465E3 998,46s |7,383E1| {7,072E-4} 2,489E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 204: neg. log cond. likelihood = 6454.549414719418 [234 calls to valueAt]
+Iter 204 evals 233 <D> [M 1,000E0] 6,455E3 1003,19s |1,199E2| {1,148E-3} 2,278E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 205: neg. log cond. likelihood = 6427.733544685241 [235 calls to valueAt]
+Iter 205 evals 234 <D> [M 1,000E0] 6,428E3 1007,29s |4,143E1| {3,968E-4} 2,492E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 206: neg. log cond. likelihood = 6409.662978943793 [236 calls to valueAt]
+Iter 206 evals 235 <D> [M 1,000E0] 6,410E3 1012,04s |5,806E1| {5,561E-4} 2,511E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 207: neg. log cond. likelihood = 6386.863813931579 [237 calls to valueAt]
+Iter 207 evals 236 <D> [M 1,000E0] 6,387E3 1015,99s |1,135E2| {1,087E-3} 2,569E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 208: neg. log cond. likelihood = 6378.269483629024 [238 calls to valueAt]
+Iter 208 evals 237 <D> [M 1,000E0] 6,378E3 1019,86s |2,512E2| {2,406E-3} 2,374E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 209: neg. log cond. likelihood = 6356.41224696898 [239 calls to valueAt]
+Iter 209 evals 238 <D> [M 1,000E0] 6,356E3 1023,77s |1,159E2| {1,110E-3} 2,521E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 210: neg. log cond. likelihood = 6342.859454876593 [240 calls to valueAt]
+Checking model correctness; x size 305182 , ysize 19
+ Lambda too big 105.14657245482437
+ empirical 0.0022760385902737 expected 0.0022760385902737
+ Lambda too big 117.69091086260465
+ empirical 0.018846229572750874 expected 0.018846229572750874
+Iter 210 evals 239 <D> [M 1,000E0] 6,343E3 1027,65s |6,787E1| {6,501E-4} 2,461E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 211: neg. log cond. likelihood = 6329.184501174084 [241 calls to valueAt]
+Iter 211 evals 240 <D> [M 1,000E0] 6,329E3 1032,47s |3,796E1| {3,636E-4} 2,479E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 212: neg. log cond. likelihood = 6316.560988251495 [242 calls to valueAt]
+Iter 212 evals 241 <D> [M 1,000E0] 6,317E3 1036,37s |2,439E2| {2,336E-3} 2,348E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 213: neg. log cond. likelihood = 6301.319755491585 [244 calls to valueAt]
+Iter 213 evals 242 <D> [1M 4,590E-1] 6,301E3 1043,25s |1,118E2| {1,071E-3} 2,432E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 214: neg. log cond. likelihood = 6288.967975500238 [245 calls to valueAt]
+Iter 214 evals 244 <D> [M 1,000E0] 6,289E3 1047,09s |5,402E1| {5,174E-4} 2,206E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 215: neg. log cond. likelihood = 6278.957114368839 [246 calls to valueAt]
+Iter 215 evals 245 <D> [M 1,000E0] 6,279E3 1051,05s |3,340E1| {3,199E-4} 2,082E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 216: neg. log cond. likelihood = 6256.114140012776 [247 calls to valueAt]
+Iter 216 evals 246 <D> [M 1,000E0] 6,256E3 1055,45s |5,624E1| {5,387E-4} 2,090E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 217: neg. log cond. likelihood = 6250.687451947893 [248 calls to valueAt]
+Iter 217 evals 247 <D> [M 1,000E0] 6,251E3 1060,66s |1,085E2| {1,040E-3} 2,041E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 218: neg. log cond. likelihood = 6226.158361241974 [249 calls to valueAt]
+Iter 218 evals 248 <D> [M 1,000E0] 6,226E3 1065,78s |5,319E1| {5,095E-4} 2,092E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 219: neg. log cond. likelihood = 6220.528405991904 [250 calls to valueAt]
+Iter 219 evals 249 <D> [M 1,000E0] 6,221E3 1070,84s |1,165E2| {1,116E-3} 1,967E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 220: neg. log cond. likelihood = 6203.903275412616 [251 calls to valueAt]
+Iter 220 evals 250 <D> [M 1,000E0] 6,204E3 1075,99s |9,188E1| {8,800E-4} 2,019E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 221: neg. log cond. likelihood = 6195.505904186446 [253 calls to valueAt]
+Iter 221 evals 251 <D> [1M 4,831E-1] 6,196E3 1083,83s |7,571E1| {7,251E-4} 1,954E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 222: neg. log cond. likelihood = 6185.851561404645 [254 calls to valueAt]
+Iter 222 evals 253 <D> [M 1,000E0] 6,186E3 1090,08s |3,981E1| {3,813E-4} 1,867E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 223: neg. log cond. likelihood = 6170.094845370554 [255 calls to valueAt]
+Iter 223 evals 254 <D> [M 1,000E0] 6,170E3 1094,23s |6,770E1| {6,484E-4} 1,927E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 224: neg. log cond. likelihood = 6159.013914648811 [256 calls to valueAt]
+Iter 224 evals 255 <D> [M 1,000E0] 6,159E3 1098,19s |1,364E2| {1,307E-3} 1,947E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 225: neg. log cond. likelihood = 6157.577088703639 [257 calls to valueAt]
+Iter 225 evals 256 <D> [M 1,000E0] 6,158E3 1102,21s |2,955E2| {2,830E-3} 1,600E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 226: neg. log cond. likelihood = 6137.754934009132 [258 calls to valueAt]
+Iter 226 evals 257 <D> [M 1,000E0] 6,138E3 1106,11s |6,027E1| {5,773E-4} 1,840E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 227: neg. log cond. likelihood = 6127.92448070376 [259 calls to valueAt]
+Iter 227 evals 258 <D> [M 1,000E0] 6,128E3 1110,12s |2,977E1| {2,851E-4} 1,603E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 228: neg. log cond. likelihood = 6114.814508243575 [260 calls to valueAt]
+Iter 228 evals 259 <D> [M 1,000E0] 6,115E3 1114,08s |9,970E1| {9,549E-4} 1,729E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 229: neg. log cond. likelihood = 6102.208093813565 [261 calls to valueAt]
+Iter 229 evals 260 <D> [M 1,000E0] 6,102E3 1117,97s |1,004E2| {9,615E-4} 1,667E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 230: neg. log cond. likelihood = 6088.358587458588 [262 calls to valueAt]
+Iter 230 evals 261 <D> [M 1,000E0] 6,088E3 1121,86s |6,097E1| {5,839E-4} 1,760E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 231: neg. log cond. likelihood = 6074.702605851507 [264 calls to valueAt]
+Iter 231 evals 262 <D> [1M 4,846E-1] 6,075E3 1129,02s |5,356E1| {5,130E-4} 1,830E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 232: neg. log cond. likelihood = 6065.449574960184 [265 calls to valueAt]
+Iter 232 evals 264 <D> [M 1,000E0] 6,065E3 1132,97s |1,638E2| {1,569E-3} 1,725E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 233: neg. log cond. likelihood = 6059.421583460119 [266 calls to valueAt]
+Iter 233 evals 265 <D> [M 1,000E0] 6,059E3 1136,83s |1,251E2| {1,198E-3} 1,644E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 234: neg. log cond. likelihood = 6046.311126711815 [267 calls to valueAt]
+Iter 234 evals 266 <D> [M 1,000E0] 6,046E3 1140,62s |3,937E1| {3,771E-4} 1,840E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 235: neg. log cond. likelihood = 6036.931556192116 [268 calls to valueAt]
+Iter 235 evals 267 <D> [M 1,000E0] 6,037E3 1144,36s |2,441E1| {2,338E-4} 1,670E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 236: neg. log cond. likelihood = 6027.362406166017 [269 calls to valueAt]
+Iter 236 evals 268 <D> [M 1,000E0] 6,027E3 1148,11s |1,267E2| {1,214E-3} 1,668E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 237: neg. log cond. likelihood = 6018.008271051221 [270 calls to valueAt]
+Iter 237 evals 269 <D> [M 1,000E0] 6,018E3 1151,88s |1,429E2| {1,368E-3} 1,609E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 238: neg. log cond. likelihood = 6009.648295905543 [272 calls to valueAt]
+Iter 238 evals 270 <D> [1M 4,942E-1] 6,010E3 1158,67s |6,996E1| {6,700E-4} 1,540E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 239: neg. log cond. likelihood = 6001.030192590795 [273 calls to valueAt]
+Iter 239 evals 272 <D> [M 1,000E0] 6,001E3 1162,50s |4,073E1| {3,900E-4} 1,455E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 240: neg. log cond. likelihood = 5990.266336044846 [274 calls to valueAt]
+Checking model correctness; x size 305182 , ysize 19
+ Lambda too big 112.60453956638881
+ empirical 0.0022760385902737 expected 0.0022760385902737
+ Lambda too big 125.32819253923893
+ empirical 0.018846229572750874 expected 0.018846229572750874
+Iter 240 evals 273 <D> [M 1,000E0] 5,990E3 1166,28s |3,844E1| {3,681E-4} 1,410E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 241: neg. log cond. likelihood = 5982.2638676676725 [275 calls to valueAt]
+Iter 241 evals 274 <D> [M 1,000E0] 5,982E3 1171,17s |7,967E1| {7,630E-4} 1,391E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 242: neg. log cond. likelihood = 5971.162975813482 [276 calls to valueAt]
+Iter 242 evals 275 <D> [M 1,000E0] 5,971E3 1174,95s |4,340E1| {4,157E-4} 1,478E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 243: neg. log cond. likelihood = 5963.070194010974 [277 calls to valueAt]
+Iter 243 evals 276 <D> [M 1,000E0] 5,963E3 1178,72s |4,874E1| {4,668E-4} 1,396E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 244: neg. log cond. likelihood = 5953.858714538986 [278 calls to valueAt]
+Iter 244 evals 277 <D> [M 1,000E0] 5,954E3 1182,45s |7,807E1| {7,477E-4} 1,395E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 245: neg. log cond. likelihood = 5947.355118050597 [280 calls to valueAt]
+Iter 245 evals 278 <D> [2M 5,038E-1] 5,947E3 1189,10s |5,892E1| {5,643E-4} 1,345E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 246: neg. log cond. likelihood = 5940.488943294248 [281 calls to valueAt]
+Iter 246 evals 280 <D> [M 1,000E0] 5,940E3 1192,92s |3,174E1| {3,040E-4} 1,305E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 247: neg. log cond. likelihood = 5928.1795823726925 [282 calls to valueAt]
+Iter 247 evals 281 <D> [M 1,000E0] 5,928E3 1197,32s |3,912E1| {3,747E-4} 1,374E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 248: neg. log cond. likelihood = 5924.643278805344 [283 calls to valueAt]
+Iter 248 evals 282 <D> [M 1,000E0] 5,925E3 1201,08s |1,463E2| {1,401E-3} 1,289E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 249: neg. log cond. likelihood = 5920.350435146033 [284 calls to valueAt]
+Iter 249 evals 283 <D> [M 1,000E0] 5,920E3 1206,16s |1,736E2| {1,663E-3} 1,181E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 250: neg. log cond. likelihood = 5911.206639613852 [285 calls to valueAt]
+Iter 250 evals 284 <D> [M 1,000E0] 5,911E3 1210,59s |3,958E1| {3,791E-4} 1,202E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 251: neg. log cond. likelihood = 5905.640723980151 [286 calls to valueAt]
+Iter 251 evals 285 <D> [M 1,000E0] 5,906E3 1215,19s |2,113E1| {2,024E-4} 1,109E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 252: neg. log cond. likelihood = 5894.523175386765 [287 calls to valueAt]
+Iter 252 evals 286 <D> [M 1,000E0] 5,895E3 1219,72s |1,137E2| {1,089E-3} 1,163E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 253: neg. log cond. likelihood = 5888.982921517307 [288 calls to valueAt]
+Iter 253 evals 287 <D> [M 1,000E0] 5,889E3 1224,02s |8,182E1| {7,836E-4} 1,102E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 254: neg. log cond. likelihood = 5880.4737797179705 [289 calls to valueAt]
+Iter 254 evals 288 <D> [M 1,000E0] 5,880E3 1228,66s |3,433E1| {3,288E-4} 1,137E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 255: neg. log cond. likelihood = 5873.396292255014 [290 calls to valueAt]
+Iter 255 evals 289 <D> [M 1,000E0] 5,873E3 1232,67s |4,681E1| {4,483E-4} 1,142E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 256: neg. log cond. likelihood = 5866.73495900304 [291 calls to valueAt]
+Iter 256 evals 290 <D> [M 1,000E0] 5,867E3 1236,45s |9,804E1| {9,390E-4} 1,047E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 257: neg. log cond. likelihood = 5860.638216987074 [292 calls to valueAt]
+Iter 257 evals 291 <D> [M 1,000E0] 5,861E3 1240,23s |6,338E1| {6,071E-4} 1,092E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 258: neg. log cond. likelihood = 5853.066537416114 [293 calls to valueAt]
+Iter 258 evals 292 <D> [M 1,000E0] 5,853E3 1243,97s |5,177E1| {4,959E-4} 1,150E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 259: neg. log cond. likelihood = 5847.673345161682 [294 calls to valueAt]
+Iter 259 evals 293 <D> [M 1,000E0] 5,848E3 1247,91s |2,379E1| {2,279E-4} 1,086E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 260: neg. log cond. likelihood = 5840.21202580434 [295 calls to valueAt]
+Iter 260 evals 294 <D> [M 1,000E0] 5,840E3 1251,73s |8,992E1| {8,612E-4} 1,120E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 261: neg. log cond. likelihood = 5833.631399600667 [296 calls to valueAt]
+Iter 261 evals 295 <D> [M 1,000E0] 5,834E3 1255,49s |8,242E1| {7,894E-4} 1,044E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 262: neg. log cond. likelihood = 5827.395672424023 [297 calls to valueAt]
+Iter 262 evals 296 <D> [M 1,000E0] 5,827E3 1259,49s |6,578E1| {6,300E-4} 1,057E-3 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 263: neg. log cond. likelihood = 5823.375860246777 [299 calls to valueAt]
+Iter 263 evals 297 <D> [1M 4,287E-1] 5,823E3 1266,10s |4,771E1| {4,569E-4} 9,805E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 264: neg. log cond. likelihood = 5817.397362442582 [300 calls to valueAt]
+Iter 264 evals 299 <D> [M 1,000E0] 5,817E3 1269,85s |3,439E1| {3,293E-4} 9,626E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 265: neg. log cond. likelihood = 5813.015536660826 [301 calls to valueAt]
+Iter 265 evals 300 <D> [M 1,000E0] 5,813E3 1273,66s |1,655E1| {1,585E-4} 9,241E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 266: neg. log cond. likelihood = 5805.959716633525 [302 calls to valueAt]
+Iter 266 evals 301 <D> [M 1,000E0] 5,806E3 1277,42s |3,872E1| {3,709E-4} 9,418E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 267: neg. log cond. likelihood = 5802.310669889497 [303 calls to valueAt]
+Iter 267 evals 302 <D> [M 1,000E0] 5,802E3 1281,15s |6,246E1| {5,982E-4} 8,748E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 268: neg. log cond. likelihood = 5794.169490913096 [304 calls to valueAt]
+Iter 268 evals 303 <D> [M 1,000E0] 5,794E3 1284,89s |3,075E1| {2,945E-4} 9,234E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 269: neg. log cond. likelihood = 5790.693550235705 [305 calls to valueAt]
+Iter 269 evals 304 <D> [M 1,000E0] 5,791E3 1288,64s |6,030E1| {5,775E-4} 8,551E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 270: neg. log cond. likelihood = 5784.953175855204 [306 calls to valueAt]
+Checking model correctness; x size 305182 , ysize 19
+ Lambda too big 119.71550322959853
+ empirical 0.0022760385902737 expected 0.0022760385902737
+ Lambda too big 132.6101276450816
+ empirical 0.018846229572750874 expected 0.018846229572750874
+Iter 270 evals 305 <D> [M 1,000E0] 5,785E3 1292,46s |4,010E1| {3,841E-4} 8,415E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 271: neg. log cond. likelihood = 5778.859384100866 [307 calls to valueAt]
+Iter 271 evals 306 <D> [M 1,000E0] 5,779E3 1297,04s |3,500E1| {3,352E-4} 8,399E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 272: neg. log cond. likelihood = 5773.450956466299 [308 calls to valueAt]
+Iter 272 evals 307 <D> [M 1,000E0] 5,773E3 1300,79s |2,448E1| {2,345E-4} 8,647E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 273: neg. log cond. likelihood = 5769.620622321593 [309 calls to valueAt]
+Iter 273 evals 308 <D> [M 1,000E0] 5,770E3 1304,56s |7,948E1| {7,613E-4} 8,281E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 274: neg. log cond. likelihood = 5767.155563991271 [310 calls to valueAt]
+Iter 274 evals 309 <D> [M 1,000E0] 5,767E3 1308,44s |1,487E2| {1,424E-3} 7,952E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 275: neg. log cond. likelihood = 5761.781902334802 [311 calls to valueAt]
+Iter 275 evals 310 <D> [M 1,000E0] 5,762E3 1312,16s |4,711E1| {4,512E-4} 7,667E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 276: neg. log cond. likelihood = 5758.733052482342 [312 calls to valueAt]
+Iter 276 evals 311 <D> [M 1,000E0] 5,759E3 1315,96s |1,560E1| {1,494E-4} 7,567E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 277: neg. log cond. likelihood = 5755.089095918661 [313 calls to valueAt]
+Iter 277 evals 312 <D> [M 1,000E0] 5,755E3 1319,81s |1,639E1| {1,570E-4} 6,791E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 278: neg. log cond. likelihood = 5749.768082233581 [314 calls to valueAt]
+Iter 278 evals 313 <D> [M 1,000E0] 5,750E3 1323,70s |6,983E1| {6,688E-4} 7,118E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 279: neg. log cond. likelihood = 5744.752088858335 [315 calls to valueAt]
+Iter 279 evals 314 <D> [M 1,000E0] 5,745E3 1327,67s |3,404E1| {3,260E-4} 6,998E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 280: neg. log cond. likelihood = 5739.961089525665 [316 calls to valueAt]
+Iter 280 evals 315 <D> [M 1,000E0] 5,740E3 1331,63s |2,648E1| {2,536E-4} 6,777E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 281: neg. log cond. likelihood = 5734.270790897915 [317 calls to valueAt]
+Iter 281 evals 316 <D> [M 1,000E0] 5,734E3 1335,46s |4,033E1| {3,862E-4} 6,833E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 282: neg. log cond. likelihood = 5730.839967200385 [319 calls to valueAt]
+Iter 282 evals 317 <D> [2M 5,219E-1] 5,731E3 1342,33s |6,743E1| {6,458E-4} 6,767E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 283: neg. log cond. likelihood = 5725.8035056042945 [320 calls to valueAt]
+Iter 283 evals 319 <D> [M 1,000E0] 5,726E3 1346,21s |2,118E1| {2,028E-4} 7,222E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 284: neg. log cond. likelihood = 5721.603500216935 [321 calls to valueAt]
+Iter 284 evals 320 <D> [M 1,000E0] 5,722E3 1350,03s |2,060E1| {1,973E-4} 7,022E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 285: neg. log cond. likelihood = 5717.792908005207 [322 calls to valueAt]
+Iter 285 evals 321 <D> [M 1,000E0] 5,718E3 1353,79s |3,860E1| {3,697E-4} 7,160E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 286: neg. log cond. likelihood = 5715.281392435292 [323 calls to valueAt]
+Iter 286 evals 322 <D> [M 1,000E0] 5,715E3 1357,61s |1,006E2| {9,637E-4} 6,965E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 287: neg. log cond. likelihood = 5712.989201608522 [324 calls to valueAt]
+Iter 287 evals 323 <D> [M 1,000E0] 5,713E3 1361,51s |1,204E2| {1,154E-3} 6,438E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 288: neg. log cond. likelihood = 5707.853704634197 [325 calls to valueAt]
+Iter 288 evals 324 <D> [M 1,000E0] 5,708E3 1365,25s |2,537E1| {2,430E-4} 6,464E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 289: neg. log cond. likelihood = 5705.028938207237 [326 calls to valueAt]
+Iter 289 evals 325 <D> [M 1,000E0] 5,705E3 1369,02s |1,321E1| {1,265E-4} 6,123E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 290: neg. log cond. likelihood = 5700.119181058194 [327 calls to valueAt]
+Iter 290 evals 326 <D> [M 1,000E0] 5,700E3 1372,81s |9,381E1| {8,984E-4} 5,991E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 291: neg. log cond. likelihood = 5695.483209794912 [328 calls to valueAt]
+Iter 291 evals 327 <D> [M 1,000E0] 5,695E3 1376,56s |3,633E1| {3,480E-4} 6,208E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 292: neg. log cond. likelihood = 5692.0988406609 [329 calls to valueAt]
+Iter 292 evals 328 <D> [M 1,000E0] 5,692E3 1380,28s |2,394E1| {2,292E-4} 5,921E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 293: neg. log cond. likelihood = 5687.8695656071695 [330 calls to valueAt]
+Iter 293 evals 329 <D> [M 1,000E0] 5,688E3 1383,99s |3,267E1| {3,129E-4} 5,931E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 294: neg. log cond. likelihood = 5683.967622990976 [331 calls to valueAt]
+Iter 294 evals 330 <D> [M 1,000E0] 5,684E3 1387,74s |3,436E1| {3,291E-4} 5,951E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 295: neg. log cond. likelihood = 5679.391386618484 [332 calls to valueAt]
+Iter 295 evals 331 <D> [M 1,000E0] 5,679E3 1391,55s |6,699E1| {6,416E-4} 6,319E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 296: neg. log cond. likelihood = 5677.870214615616 [333 calls to valueAt]
+Iter 296 evals 332 <D> [M 1,000E0] 5,678E3 1395,26s |8,961E1| {8,582E-4} 6,185E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 297: neg. log cond. likelihood = 5672.45059241573 [334 calls to valueAt]
+Iter 297 evals 333 <D> [M 1,000E0] 5,672E3 1399,02s |2,008E1| {1,923E-4} 6,241E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 298: neg. log cond. likelihood = 5670.053581595198 [335 calls to valueAt]
+Iter 298 evals 334 <D> [M 1,000E0] 5,670E3 1402,74s |1,850E1| {1,772E-4} 6,168E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 299: neg. log cond. likelihood = 5666.909132451659 [336 calls to valueAt]
+Iter 299 evals 335 <D> [M 1,000E0] 5,667E3 1406,48s |8,714E1| {8,346E-4} 5,860E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 300: neg. log cond. likelihood = 5664.198219442794 [338 calls to valueAt]
+Checking model correctness; x size 305182 , ysize 19
+ Lambda too big 126.85252934820706
+ empirical 0.0022760385902737 expected 0.0022760385902737
+ Lambda too big 139.9187518422271
+ empirical 0.018846229572750874 expected 0.018846229572750874
+Iter 300 evals 336 <D> [2M 5,197E-1] 5,664E3 1413,07s |3,059E1| {2,930E-4} 5,523E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 301: neg. log cond. likelihood = 5661.5775409111875 [339 calls to valueAt]
+Iter 301 evals 338 <D> [M 1,000E0] 5,662E3 1417,64s |2,154E1| {2,063E-4} 5,391E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 302: neg. log cond. likelihood = 5657.9543793672465 [340 calls to valueAt]
+Iter 302 evals 339 <D> [M 1,000E0] 5,658E3 1421,35s |3,300E1| {3,161E-4} 5,287E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 303: neg. log cond. likelihood = 5655.556552342858 [341 calls to valueAt]
+Iter 303 evals 340 <D> [M 1,000E0] 5,656E3 1425,06s |4,104E1| {3,930E-4} 5,024E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 304: neg. log cond. likelihood = 5652.082201557833 [342 calls to valueAt]
+Iter 304 evals 341 <D> [M 1,000E0] 5,652E3 1428,77s |2,338E1| {2,239E-4} 4,832E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 305: neg. log cond. likelihood = 5649.4258372532 [343 calls to valueAt]
+Iter 305 evals 342 <D> [M 1,000E0] 5,649E3 1432,53s |2,840E1| {2,720E-4} 5,035E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 306: neg. log cond. likelihood = 5646.381341083334 [344 calls to valueAt]
+Iter 306 evals 343 <D> [M 1,000E0] 5,646E3 1436,29s |2,441E1| {2,338E-4} 4,617E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 307: neg. log cond. likelihood = 5643.05132935632 [345 calls to valueAt]
+Iter 307 evals 344 <D> [M 1,000E0] 5,643E3 1440,02s |2,072E1| {1,984E-4} 4,785E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 308: neg. log cond. likelihood = 5639.655671172903 [346 calls to valueAt]
+Iter 308 evals 345 <D> [M 1,000E0] 5,640E3 1443,78s |3,114E1| {2,983E-4} 4,832E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 309: neg. log cond. likelihood = 5637.8159469285865 [347 calls to valueAt]
+Iter 309 evals 346 <D> [M 1,000E0] 5,638E3 1447,61s |6,014E1| {5,760E-4} 4,680E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 310: neg. log cond. likelihood = 5634.407458875237 [348 calls to valueAt]
+Iter 310 evals 347 <D> [M 1,000E0] 5,634E3 1451,34s |3,832E1| {3,671E-4} 4,822E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 311: neg. log cond. likelihood = 5632.243929528803 [349 calls to valueAt]
+Iter 311 evals 348 <D> [M 1,000E0] 5,632E3 1455,08s |3,509E1| {3,361E-4} 4,565E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 312: neg. log cond. likelihood = 5630.565912701739 [350 calls to valueAt]
+Iter 312 evals 349 <D> [M 1,000E0] 5,631E3 1458,82s |6,914E1| {6,622E-4} 4,438E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 313: neg. log cond. likelihood = 5627.647317898814 [351 calls to valueAt]
+Iter 313 evals 350 <D> [M 1,000E0] 5,628E3 1462,60s |1,639E1| {1,570E-4} 4,342E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 314: neg. log cond. likelihood = 5625.311991820394 [352 calls to valueAt]
+Iter 314 evals 351 <D> [M 1,000E0] 5,625E3 1467,69s |1,144E1| {1,096E-4} 4,287E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 315: neg. log cond. likelihood = 5621.855676450211 [353 calls to valueAt]
+Iter 315 evals 352 <D> [M 1,000E0] 5,622E3 1471,88s |3,956E1| {3,789E-4} 4,363E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 316: neg. log cond. likelihood = 5619.905459520295 [354 calls to valueAt]
+Iter 316 evals 353 <D> [M 1,000E0] 5,620E3 1475,75s |2,886E1| {2,764E-4} 4,119E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 317: neg. log cond. likelihood = 5616.939814698151 [355 calls to valueAt]
+Iter 317 evals 354 <D> [M 1,000E0] 5,617E3 1479,64s |2,429E1| {2,327E-4} 4,044E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 318: neg. log cond. likelihood = 5614.435708575469 [356 calls to valueAt]
+Iter 318 evals 355 <D> [M 1,000E0] 5,614E3 1484,12s |3,968E1| {3,800E-4} 4,164E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 319: neg. log cond. likelihood = 5611.562794748623 [357 calls to valueAt]
+Iter 319 evals 356 <D> [M 1,000E0] 5,612E3 1488,48s |1,355E1| {1,298E-4} 4,071E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 320: neg. log cond. likelihood = 5609.143688277736 [358 calls to valueAt]
+Iter 320 evals 357 <D> [M 1,000E0] 5,609E3 1494,10s |1,913E1| {1,832E-4} 4,118E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 321: neg. log cond. likelihood = 5606.238303515646 [359 calls to valueAt]
+Iter 321 evals 358 <D> [M 1,000E0] 5,606E3 1498,26s |4,817E1| {4,613E-4} 4,339E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 322: neg. log cond. likelihood = 5604.571662569532 [361 calls to valueAt]
+Iter 322 evals 359 <D> [1M 3,875E-1] 5,605E3 1504,86s |2,453E1| {2,349E-4} 4,117E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 323: neg. log cond. likelihood = 5602.264091298649 [362 calls to valueAt]
+Iter 323 evals 361 <D> [M 1,000E0] 5,602E3 1508,83s |1,651E1| {1,581E-4} 4,114E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 324: neg. log cond. likelihood = 5600.027982088629 [363 calls to valueAt]
+Iter 324 evals 362 <D> [M 1,000E0] 5,600E3 1514,28s |5,824E1| {5,578E-4} 3,898E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 325: neg. log cond. likelihood = 5598.989587615621 [364 calls to valueAt]
+Iter 325 evals 363 <D> [M 1,000E0] 5,599E3 1518,21s |7,173E1| {6,870E-4} 3,736E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 326: neg. log cond. likelihood = 5596.068306372157 [365 calls to valueAt]
+Iter 326 evals 364 <D> [M 1,000E0] 5,596E3 1522,77s |1,844E1| {1,766E-4} 3,730E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 327: neg. log cond. likelihood = 5593.5602679619815 [366 calls to valueAt]
+Iter 327 evals 365 <D> [M 1,000E0] 5,594E3 1527,59s |1,838E1| {1,760E-4} 3,732E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 328: neg. log cond. likelihood = 5591.396780774328 [367 calls to valueAt]
+Iter 328 evals 366 <D> [M 1,000E0] 5,591E3 1531,53s |3,995E1| {3,826E-4} 3,607E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 329: neg. log cond. likelihood = 5588.3549260413665 [368 calls to valueAt]
+Iter 329 evals 367 <D> [M 1,000E0] 5,588E3 1536,53s |3,124E1| {2,992E-4} 3,720E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 330: neg. log cond. likelihood = 5586.446812029566 [369 calls to valueAt]
+Checking model correctness; x size 305182 , ysize 19
+ Lambda too big 133.48177523961834
+ empirical 0.0022760385902737 expected 0.0022760385902737
+ Lambda too big 146.707387078245
+ empirical 0.018846229572750874 expected 0.018846229572750874
+Iter 330 evals 368 <D> [M 1,000E0] 5,586E3 1540,77s |2,636E1| {2,524E-4} 3,543E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 331: neg. log cond. likelihood = 5583.2406695323125 [370 calls to valueAt]
+Iter 331 evals 369 <D> [M 1,000E0] 5,583E3 1545,51s |1,879E1| {1,800E-4} 3,821E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 332: neg. log cond. likelihood = 5581.740586155199 [372 calls to valueAt]
+Iter 332 evals 370 <D> [1M 4,860E-1] 5,582E3 1552,26s |5,175E1| {4,956E-4} 3,677E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 333: neg. log cond. likelihood = 5579.769216092994 [373 calls to valueAt]
+Iter 333 evals 372 <D> [M 1,000E0] 5,580E3 1556,54s |2,757E1| {2,641E-4} 3,631E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 334: neg. log cond. likelihood = 5578.720494499705 [374 calls to valueAt]
+Iter 334 evals 373 <D> [M 1,000E0] 5,579E3 1560,82s |4,399E1| {4,213E-4} 3,633E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 335: neg. log cond. likelihood = 5576.451229887844 [375 calls to valueAt]
+Iter 335 evals 374 <D> [M 1,000E0] 5,576E3 1564,84s |1,934E1| {1,853E-4} 3,518E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 336: neg. log cond. likelihood = 5575.05974725268 [376 calls to valueAt]
+Iter 336 evals 375 <D> [M 1,000E0] 5,575E3 1568,89s |2,181E1| {2,089E-4} 3,318E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 337: neg. log cond. likelihood = 5573.313022621889 [377 calls to valueAt]
+Iter 337 evals 376 <D> [M 1,000E0] 5,573E3 1572,93s |4,312E1| {4,130E-4} 3,245E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 338: neg. log cond. likelihood = 5571.291613395949 [378 calls to valueAt]
+Iter 338 evals 377 <D> [M 1,000E0] 5,571E3 1577,08s |1,996E1| {1,911E-4} 3,063E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 339: neg. log cond. likelihood = 5568.8690980835745 [379 calls to valueAt]
+Iter 339 evals 378 <D> [M 1,000E0] 5,569E3 1581,24s |1,772E1| {1,697E-4} 3,156E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 340: neg. log cond. likelihood = 5567.044377612236 [380 calls to valueAt]
+Iter 340 evals 379 <D> [M 1,000E0] 5,567E3 1585,36s |2,203E1| {2,110E-4} 2,909E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 341: neg. log cond. likelihood = 5564.627018357033 [381 calls to valueAt]
+Iter 341 evals 380 <D> [M 1,000E0] 5,565E3 1589,09s |1,282E1| {1,228E-4} 3,075E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 342: neg. log cond. likelihood = 5562.999698023498 [382 calls to valueAt]
+Iter 342 evals 381 <D> [M 1,000E0] 5,563E3 1593,19s |4,039E1| {3,868E-4} 3,014E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 343: neg. log cond. likelihood = 5560.26030715899 [383 calls to valueAt]
+Iter 343 evals 382 <D> [M 1,000E0] 5,560E3 1597,57s |1,494E1| {1,430E-4} 3,320E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 344: neg. log cond. likelihood = 5558.495765437913 [384 calls to valueAt]
+Iter 344 evals 383 <D> [M 1,000E0] 5,558E3 1602,08s |2,014E1| {1,929E-4} 3,230E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 345: neg. log cond. likelihood = 5555.988135011541 [385 calls to valueAt]
+Iter 345 evals 384 <D> [M 1,000E0] 5,556E3 1608,70s |3,640E1| {3,486E-4} 3,433E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 346: neg. log cond. likelihood = 5554.480230558247 [387 calls to valueAt]
+Iter 346 evals 385 <D> [1M 2,847E-1] 5,554E3 1619,16s |4,333E1| {4,150E-4} 3,391E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 347: neg. log cond. likelihood = 5552.415670868392 [388 calls to valueAt]
+Iter 347 evals 387 <D> [M 1,000E0] 5,552E3 1624,63s |1,146E1| {1,097E-4} 3,400E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 348: neg. log cond. likelihood = 5550.8283930157895 [389 calls to valueAt]
+Iter 348 evals 388 <D> [M 1,000E0] 5,551E3 1629,89s |7,973E0| {7,636E-5} 3,250E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 349: neg. log cond. likelihood = 5548.700440748816 [390 calls to valueAt]
+Iter 349 evals 389 <D> [M 1,000E0] 5,549E3 1636,14s |3,295E1| {3,156E-4} 3,306E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 350: neg. log cond. likelihood = 5546.691150838928 [391 calls to valueAt]
+Iter 350 evals 390 <D> [M 1,000E0] 5,547E3 1645,24s |3,030E1| {2,902E-4} 3,234E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 351: neg. log cond. likelihood = 5546.3176590621015 [392 calls to valueAt]
+Iter 351 evals 391 <D> [M 1,000E0] 5,546E3 1650,54s |6,604E1| {6,325E-4} 3,008E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 352: neg. log cond. likelihood = 5543.41560045896 [393 calls to valueAt]
+Iter 352 evals 392 <D> [M 1,000E0] 5,543E3 1655,66s |1,039E1| {9,955E-5} 3,039E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 353: neg. log cond. likelihood = 5542.138440989582 [394 calls to valueAt]
+Iter 353 evals 393 <D> [M 1,000E0] 5,542E3 1660,57s |8,584E0| {8,221E-5} 2,951E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 354: neg. log cond. likelihood = 5540.20566512337 [395 calls to valueAt]
+Iter 354 evals 394 <D> [M 1,000E0] 5,540E3 1665,47s |3,004E1| {2,877E-4} 2,849E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 355: neg. log cond. likelihood = 5538.208201249987 [396 calls to valueAt]
+Iter 355 evals 395 <D> [M 1,000E0] 5,538E3 1670,28s |2,248E1| {2,153E-4} 2,938E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 356: neg. log cond. likelihood = 5536.376655403309 [397 calls to valueAt]
+Iter 356 evals 396 <D> [M 1,000E0] 5,536E3 1675,15s |3,020E1| {2,892E-4} 2,897E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 357: neg. log cond. likelihood = 5534.711817432255 [398 calls to valueAt]
+Iter 357 evals 397 <D> [M 1,000E0] 5,535E3 1680,12s |3,938E1| {3,771E-4} 2,912E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 358: neg. log cond. likelihood = 5534.439282642008 [399 calls to valueAt]
+Iter 358 evals 398 <D> [M 1,000E0] 5,534E3 1684,99s |7,513E1| {7,196E-4} 2,577E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 359: neg. log cond. likelihood = 5532.137837700559 [400 calls to valueAt]
+Iter 359 evals 399 <D> [M 1,000E0] 5,532E3 1690,09s |9,499E0| {9,097E-5} 2,631E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 360: neg. log cond. likelihood = 5530.93360103917 [401 calls to valueAt]
+Checking model correctness; x size 305182 , ysize 19
+ Lambda too big 102.2766637903005
+ empirical 0.001989893023561103 expected 0.001989893023561102
+ Lambda too big 139.68063865268036
+ empirical 0.0022760385902737 expected 0.0022760385902737
+ Lambda too big 101.4141005557341
+ empirical 0.0015094834941261595 expected 0.0015094834939488788
+ Lambda too big 153.0552920033422
+ empirical 0.018846229572750874 expected 0.018846229572750874
+Iter 360 evals 400 <D> [M 1,000E0] 5,531E3 1695,39s |1,257E1| {1,204E-4} 2,781E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 361: neg. log cond. likelihood = 5529.488052411934 [402 calls to valueAt]
+Iter 361 evals 401 <D> [M 1,000E0] 5,529E3 1701,80s |4,672E1| {4,475E-4} 2,519E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 362: neg. log cond. likelihood = 5527.422945278715 [403 calls to valueAt]
+Iter 362 evals 402 <D> [M 1,000E0] 5,527E3 1706,90s |2,799E1| {2,681E-4} 2,662E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 363: neg. log cond. likelihood = 5526.606794280966 [404 calls to valueAt]
+Iter 363 evals 403 <D> [M 1,000E0] 5,527E3 1712,06s |2,973E1| {2,848E-4} 2,461E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 364: neg. log cond. likelihood = 5524.973939648939 [405 calls to valueAt]
+Iter 364 evals 404 <D> [M 1,000E0] 5,525E3 1717,34s |2,101E1| {2,013E-4} 2,395E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 365: neg. log cond. likelihood = 5523.984538783596 [406 calls to valueAt]
+Iter 365 evals 405 <D> [M 1,000E0] 5,524E3 1722,51s |2,343E1| {2,244E-4} 2,243E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 366: neg. log cond. likelihood = 5522.159784845744 [407 calls to valueAt]
+Iter 366 evals 406 <D> [M 1,000E0] 5,522E3 1727,62s |3,724E1| {3,567E-4} 2,273E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 367: neg. log cond. likelihood = 5521.017526541043 [408 calls to valueAt]
+Iter 367 evals 407 <D> [M 1,000E0] 5,521E3 1732,76s |1,756E1| {1,682E-4} 2,431E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 368: neg. log cond. likelihood = 5519.4814734668 [409 calls to valueAt]
+Iter 368 evals 408 <D> [M 1,000E0] 5,519E3 1737,90s |1,392E1| {1,333E-4} 2,293E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 369: neg. log cond. likelihood = 5518.843281807224 [410 calls to valueAt]
+Iter 369 evals 409 <D> [M 1,000E0] 5,519E3 1743,06s |8,135E1| {7,791E-4} 2,191E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 370: neg. log cond. likelihood = 5516.798413907913 [411 calls to valueAt]
+Iter 370 evals 410 <D> [M 1,000E0] 5,517E3 1748,18s |2,231E1| {2,136E-4} 2,300E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 371: neg. log cond. likelihood = 5515.612154447097 [412 calls to valueAt]
+Iter 371 evals 411 <D> [M 1,000E0] 5,516E3 1753,47s |9,271E0| {8,880E-5} 2,141E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 372: neg. log cond. likelihood = 5514.449764489094 [413 calls to valueAt]
+Iter 372 evals 412 <D> [M 1,000E0] 5,514E3 1758,81s |7,070E0| {6,771E-5} 2,205E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 373: neg. log cond. likelihood = 5513.224962356128 [414 calls to valueAt]
+Iter 373 evals 413 <D> [M 1,000E0] 5,513E3 1764,09s |4,700E1| {4,501E-4} 2,131E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 374: neg. log cond. likelihood = 5511.0398243667905 [415 calls to valueAt]
+Iter 374 evals 414 <D> [M 1,000E0] 5,511E3 1769,30s |2,311E1| {2,213E-4} 2,349E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 375: neg. log cond. likelihood = 5510.066626999791 [416 calls to valueAt]
+Iter 375 evals 415 <D> [M 1,000E0] 5,510E3 1774,78s |2,509E1| {2,403E-4} 2,195E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 376: neg. log cond. likelihood = 5508.567627875595 [417 calls to valueAt]
+Iter 376 evals 416 <D> [M 1,000E0] 5,509E3 1780,00s |8,548E0| {8,187E-5} 2,260E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 377: neg. log cond. likelihood = 5507.084513053235 [418 calls to valueAt]
+Iter 377 evals 417 <D> [M 1,000E0] 5,507E3 1785,23s |1,619E1| {1,551E-4} 2,251E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 378: neg. log cond. likelihood = 5505.364538565912 [419 calls to valueAt]
+Iter 378 evals 418 <D> [M 1,000E0] 5,505E3 1790,36s |2,568E1| {2,459E-4} 2,448E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 379: neg. log cond. likelihood = 5504.265931123154 [420 calls to valueAt]
+Iter 379 evals 419 <D> [M 1,000E0] 5,504E3 1795,45s |2,661E1| {2,549E-4} 2,277E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 380: neg. log cond. likelihood = 5502.465122716532 [421 calls to valueAt]
+Iter 380 evals 420 <D> [M 1,000E0] 5,502E3 1800,66s |3,917E1| {3,752E-4} 2,389E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 381: neg. log cond. likelihood = 5501.400180476533 [423 calls to valueAt]
+Iter 381 evals 421 <D> [1M 3,774E-1] 5,501E3 1809,74s |2,101E1| {2,013E-4} 2,372E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 382: neg. log cond. likelihood = 5500.313887194271 [424 calls to valueAt]
+Iter 382 evals 423 <D> [M 1,000E0] 5,500E3 1814,89s |8,958E0| {8,579E-5} 2,347E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 383: neg. log cond. likelihood = 5499.060723131768 [425 calls to valueAt]
+Iter 383 evals 424 <D> [M 1,000E0] 5,499E3 1820,10s |9,657E0| {9,249E-5} 2,178E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 384: neg. log cond. likelihood = 5497.7834975550995 [426 calls to valueAt]
+Iter 384 evals 425 <D> [M 1,000E0] 5,498E3 1825,20s |2,430E1| {2,328E-4} 2,234E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 385: neg. log cond. likelihood = 5496.216292478563 [427 calls to valueAt]
+Iter 385 evals 426 <D> [M 1,000E0] 5,496E3 1830,34s |1,205E1| {1,154E-4} 2,247E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 386: neg. log cond. likelihood = 5494.957911583163 [428 calls to valueAt]
+Iter 386 evals 427 <D> [M 1,000E0] 5,495E3 1835,56s |1,775E1| {1,700E-4} 2,207E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 387: neg. log cond. likelihood = 5493.422228943259 [429 calls to valueAt]
+Iter 387 evals 428 <D> [M 1,000E0] 5,493E3 1840,77s |2,549E1| {2,441E-4} 2,174E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 388: neg. log cond. likelihood = 5492.467888901566 [430 calls to valueAt]
+Iter 388 evals 429 <D> [M 1,000E0] 5,492E3 1845,89s |3,160E1| {3,026E-4} 2,148E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 389: neg. log cond. likelihood = 5490.992023983177 [431 calls to valueAt]
+Iter 389 evals 430 <D> [M 1,000E0] 5,491E3 1851,06s |9,244E0| {8,853E-5} 2,089E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 390: neg. log cond. likelihood = 5489.577075285772 [432 calls to valueAt]
+Checking model correctness; x size 305182 , ysize 19
+ Lambda too big 102.76858702885426
+ empirical 0.04379864802782183 expected 0.04379864802700453
+ Lambda too big 103.20081397784269
+ empirical 0.0058252936929843796 expected 0.0058252936929843796
+ Lambda too big 102.06990330785867
+ empirical 0.005804292183500874 expected 0.0058042885678487996
+ Lambda too big 105.9330621127478
+ empirical 0.001989893023561103 expected 0.0019898930235611022
+ Lambda too big 144.65435878735826
+ empirical 0.0022760385902737 expected 0.0022760385902737
+ Lambda too big 105.05574591500785
+ empirical 0.0015094834941261595 expected 0.0015094834902738554
+ Lambda too big 158.14859710049458
+ empirical 0.018846229572750874 expected 0.018846229572750874
+Iter 390 evals 431 <D> [M 1,000E0] 5,490E3 1856,17s |1,340E1| {1,283E-4} 2,154E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 391: neg. log cond. likelihood = 5488.422083796787 [433 calls to valueAt]
+Iter 391 evals 432 <D> [M 1,000E0] 5,488E3 1862,67s |3,023E1| {2,895E-4} 2,167E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 392: neg. log cond. likelihood = 5487.616668084844 [435 calls to valueAt]
+Iter 392 evals 433 <D> [2M 5,175E-1] 5,488E3 1871,89s |2,783E1| {2,665E-4} 2,085E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 393: neg. log cond. likelihood = 5486.403709839516 [436 calls to valueAt]
+Iter 393 evals 435 <D> [M 1,000E0] 5,486E3 1877,01s |8,642E0| {8,277E-5} 2,074E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 394: neg. log cond. likelihood = 5485.380189377466 [437 calls to valueAt]
+Iter 394 evals 436 <D> [M 1,000E0] 5,485E3 1882,23s |1,275E1| {1,221E-4} 1,975E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 395: neg. log cond. likelihood = 5483.91719977212 [438 calls to valueAt]
+Iter 395 evals 437 <D> [M 1,000E0] 5,484E3 1887,79s |1,254E1| {1,201E-4} 2,013E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 396: neg. log cond. likelihood = 5482.640655455808 [439 calls to valueAt]
+Iter 396 evals 438 <D> [M 1,000E0] 5,483E3 1893,10s |2,143E1| {2,053E-4} 1,966E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 397: neg. log cond. likelihood = 5481.426903847401 [440 calls to valueAt]
+Iter 397 evals 439 <D> [M 1,000E0] 5,481E3 1898,35s |1,622E1| {1,553E-4} 2,014E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 398: neg. log cond. likelihood = 5480.162507781727 [441 calls to valueAt]
+Iter 398 evals 440 <D> [M 1,000E0] 5,480E3 1903,72s |8,487E0| {8,128E-5} 1,976E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 399: neg. log cond. likelihood = 5479.254954243224 [442 calls to valueAt]
+Iter 399 evals 441 <D> [M 1,000E0] 5,479E3 1908,84s |1,993E1| {1,908E-4} 1,884E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 400: neg. log cond. likelihood = 5478.085897769704 [443 calls to valueAt]
+Iter 400 evals 442 <D> [M 1,000E0] 5,478E3 1914,56s |2,451E1| {2,348E-4} 1,887E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 401: neg. log cond. likelihood = 5476.805688223123 [444 calls to valueAt]
+Iter 401 evals 443 <D> [M 1,000E0] 5,477E3 1920,23s |1,986E1| {1,902E-4} 1,974E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 402: neg. log cond. likelihood = 5475.6687673050765 [445 calls to valueAt]
+Iter 402 evals 444 <D> [M 1,000E0] 5,476E3 1925,38s |1,358E1| {1,301E-4} 1,960E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 403: neg. log cond. likelihood = 5474.095230300131 [446 calls to valueAt]
+Iter 403 evals 445 <D> [M 1,000E0] 5,474E3 1930,50s |1,058E1| {1,013E-4} 2,062E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 404: neg. log cond. likelihood = 5472.80954453714 [447 calls to valueAt]
+Iter 404 evals 446 <D> [M 1,000E0] 5,473E3 1935,74s |1,885E1| {1,805E-4} 2,030E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 405: neg. log cond. likelihood = 5472.165929599042 [448 calls to valueAt]
+Iter 405 evals 447 <D> [M 1,000E0] 5,472E3 1941,03s |7,352E1| {7,041E-4} 1,914E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 406: neg. log cond. likelihood = 5471.390091160315 [449 calls to valueAt]
+Iter 406 evals 448 <D> [M 1,000E0] 5,471E3 1946,13s |4,192E1| {4,015E-4} 1,834E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 407: neg. log cond. likelihood = 5470.048323123798 [450 calls to valueAt]
+Iter 407 evals 449 <D> [M 1,000E0] 5,470E3 1951,22s |1,157E1| {1,108E-4} 1,849E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 408: neg. log cond. likelihood = 5469.407247805714 [451 calls to valueAt]
+Iter 408 evals 450 <D> [M 1,000E0] 5,469E3 1956,58s |4,068E0| {3,896E-5} 1,801E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 409: neg. log cond. likelihood = 5468.114926235756 [452 calls to valueAt]
+Iter 409 evals 451 <D> [M 1,000E0] 5,468E3 1961,68s |4,363E1| {4,178E-4} 1,823E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 410: neg. log cond. likelihood = 5466.957999204218 [453 calls to valueAt]
+Iter 410 evals 452 <D> [M 1,000E0] 5,467E3 1967,00s |3,222E1| {3,086E-4} 1,801E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 411: neg. log cond. likelihood = 5465.740308423055 [454 calls to valueAt]
+Iter 411 evals 453 <D> [M 1,000E0] 5,466E3 1972,26s |1,196E1| {1,145E-4} 1,816E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 412: neg. log cond. likelihood = 5464.7265867506085 [455 calls to valueAt]
+Iter 412 evals 454 <D> [M 1,000E0] 5,465E3 1977,40s |5,931E0| {5,680E-5} 1,714E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 413: neg. log cond. likelihood = 5463.559629521117 [456 calls to valueAt]
+Iter 413 evals 455 <D> [M 1,000E0] 5,464E3 1982,52s |3,224E1| {3,087E-4} 1,693E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 414: neg. log cond. likelihood = 5462.684543530789 [457 calls to valueAt]
+Iter 414 evals 456 <D> [M 1,000E0] 5,463E3 1987,62s |3,126E1| {2,994E-4} 1,736E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 415: neg. log cond. likelihood = 5461.58802626447 [458 calls to valueAt]
+Iter 415 evals 457 <D> [M 1,000E0] 5,462E3 1992,83s |1,731E1| {1,658E-4} 1,795E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 416: neg. log cond. likelihood = 5460.787425399019 [459 calls to valueAt]
+Iter 416 evals 458 <D> [M 1,000E0] 5,461E3 1998,05s |8,191E0| {7,845E-5} 1,696E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 417: neg. log cond. likelihood = 5460.215419952124 [460 calls to valueAt]
+Iter 417 evals 459 <D> [M 1,000E0] 5,460E3 2003,17s |4,408E1| {4,221E-4} 1,683E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 418: neg. log cond. likelihood = 5458.961673399175 [461 calls to valueAt]
+Iter 418 evals 460 <D> [M 1,000E0] 5,459E3 2008,30s |1,204E1| {1,153E-4} 1,677E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 419: neg. log cond. likelihood = 5458.177971280819 [462 calls to valueAt]
+Iter 419 evals 461 <D> [M 1,000E0] 5,458E3 2013,42s |1,376E1| {1,318E-4} 1,609E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 420: neg. log cond. likelihood = 5457.052075120306 [463 calls to valueAt]
+Checking model correctness; x size 305182 , ysize 19
+ Lambda too big 106.2485875456597
+ empirical 0.04379864802782183 expected 0.04379864802329106
+ Lambda too big 106.94072068275825
+ empirical 0.0058252936929843796 expected 0.005825293692984379
+ Lambda too big 106.08922546804314
+ empirical 0.005804292183500874 expected 0.005804290671656185
+ Lambda too big 109.95825632962055
+ empirical 0.001989893023561103 expected 0.001989893023561102
+ Lambda too big 150.12974405866083
+ empirical 0.0022760385902737 expected 0.0022760385902737
+ Lambda too big 102.89920164311312
+ empirical 0.002134278401260122 expected 0.0021342784009321506
+ Lambda too big 100.83786115726022
+ empirical 0.0018166305703222736 expected 0.0018166305703222736
+ Lambda too big 109.06490245206118
+ empirical 0.0015094834941261595 expected 0.0015094834336906188
+ Lambda too big 163.75562906398932
+ empirical 0.018846229572750874 expected 0.018846229572750874
+Iter 420 evals 462 <D> [M 1,000E0] 5,457E3 2018,55s |2,989E1| {2,862E-4} 1,592E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 421: neg. log cond. likelihood = 5455.995452550639 [464 calls to valueAt]
+Iter 421 evals 463 <D> [M 1,000E0] 5,456E3 2024,92s |1,503E1| {1,439E-4} 1,600E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 422: neg. log cond. likelihood = 5454.875011821355 [465 calls to valueAt]
+Iter 422 evals 464 <D> [M 1,000E0] 5,455E3 2030,02s |7,768E0| {7,440E-5} 1,592E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 423: neg. log cond. likelihood = 5453.812734009897 [466 calls to valueAt]
+Iter 423 evals 465 <D> [M 1,000E0] 5,454E3 2035,51s |1,580E1| {1,513E-4} 1,627E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 424: neg. log cond. likelihood = 5452.733815881013 [467 calls to valueAt]
+Iter 424 evals 466 <D> [M 1,000E0] 5,453E3 2040,62s |2,380E1| {2,280E-4} 1,624E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 425: neg. log cond. likelihood = 5451.998352694217 [468 calls to valueAt]
+Iter 425 evals 467 <D> [M 1,000E0] 5,452E3 2045,74s |1,575E1| {1,508E-4} 1,612E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 426: neg. log cond. likelihood = 5451.021220752213 [469 calls to valueAt]
+Iter 426 evals 468 <D> [M 1,000E0] 5,451E3 2050,88s |9,365E0| {8,969E-5} 1,687E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 427: neg. log cond. likelihood = 5450.325008043467 [470 calls to valueAt]
+Iter 427 evals 469 <D> [M 1,000E0] 5,450E3 2056,06s |2,136E1| {2,046E-4} 1,585E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 428: neg. log cond. likelihood = 5449.262485616231 [471 calls to valueAt]
+Iter 428 evals 470 <D> [M 1,000E0] 5,449E3 2061,19s |2,497E1| {2,392E-4} 1,636E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 429: neg. log cond. likelihood = 5448.772056107596 [472 calls to valueAt]
+Iter 429 evals 471 <D> [M 1,000E0] 5,449E3 2066,51s |4,106E1| {3,933E-4} 1,520E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 430: neg. log cond. likelihood = 5447.815430673018 [473 calls to valueAt]
+Iter 430 evals 472 <D> [M 1,000E0] 5,448E3 2072,04s |5,804E0| {5,559E-5} 1,502E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 431: neg. log cond. likelihood = 5447.086980811123 [474 calls to valueAt]
+Iter 431 evals 473 <D> [M 1,000E0] 5,447E3 2077,16s |9,838E0| {9,422E-5} 1,430E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 432: neg. log cond. likelihood = 5446.400927355023 [475 calls to valueAt]
+Iter 432 evals 474 <D> [M 1,000E0] 5,446E3 2082,24s |4,376E1| {4,191E-4} 1,361E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 433: neg. log cond. likelihood = 5445.465304399655 [476 calls to valueAt]
+Iter 433 evals 475 <D> [M 1,000E0] 5,445E3 2087,34s |1,665E1| {1,595E-4} 1,335E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 434: neg. log cond. likelihood = 5444.509660039157 [477 calls to valueAt]
+Iter 434 evals 476 <D> [M 1,000E0] 5,445E3 2092,39s |3,034E1| {2,906E-4} 1,375E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 435: neg. log cond. likelihood = 5443.6002934555545 [478 calls to valueAt]
+Iter 435 evals 477 <D> [M 1,000E0] 5,444E3 2097,87s |2,828E1| {2,708E-4} 1,363E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 436: neg. log cond. likelihood = 5442.78593134878 [479 calls to valueAt]
+Iter 436 evals 478 <D> [M 1,000E0] 5,443E3 2103,04s |9,323E0| {8,929E-5} 1,385E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 437: neg. log cond. likelihood = 5441.805412885717 [480 calls to valueAt]
+Iter 437 evals 479 <D> [M 1,000E0] 5,442E3 2108,16s |1,309E1| {1,254E-4} 1,370E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 438: neg. log cond. likelihood = 5441.185055027714 [481 calls to valueAt]
+Iter 438 evals 480 <D> [M 1,000E0] 5,441E3 2113,36s |1,832E1| {1,755E-4} 1,394E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 439: neg. log cond. likelihood = 5439.905714298256 [482 calls to valueAt]
+Iter 439 evals 481 <D> [M 1,000E0] 5,440E3 2118,54s |7,696E0| {7,371E-5} 1,454E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 440: neg. log cond. likelihood = 5439.76908812771 [483 calls to valueAt]
+Iter 440 evals 482 <D> [M 1,000E0] 5,440E3 2123,64s |3,994E1| {3,825E-4} 1,345E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 441: neg. log cond. likelihood = 5438.851283701294 [484 calls to valueAt]
+Iter 441 evals 483 <D> [M 1,000E0] 5,439E3 2128,76s |1,643E1| {1,573E-4} 1,388E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 442: neg. log cond. likelihood = 5438.3162196084495 [485 calls to valueAt]
+Iter 442 evals 484 <D> [M 1,000E0] 5,438E3 2133,86s |1,005E1| {9,624E-5} 1,315E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 443: neg. log cond. likelihood = 5437.719314403508 [486 calls to valueAt]
+Iter 443 evals 485 <D> [M 1,000E0] 5,438E3 2139,00s |1,041E1| {9,973E-5} 1,249E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 444: neg. log cond. likelihood = 5437.1525341401975 [487 calls to valueAt]
+Iter 444 evals 486 <D> [M 1,000E0] 5,437E3 2144,15s |4,058E1| {3,886E-4} 1,186E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 445: neg. log cond. likelihood = 5436.290849032053 [488 calls to valueAt]
+Iter 445 evals 487 <D> [M 1,000E0] 5,436E3 2149,27s |2,712E1| {2,597E-4} 1,195E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 446: neg. log cond. likelihood = 5435.578955332641 [489 calls to valueAt]
+Iter 446 evals 488 <D> [M 1,000E0] 5,436E3 2154,42s |1,019E1| {9,762E-5} 1,146E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 447: neg. log cond. likelihood = 5434.934918498555 [490 calls to valueAt]
+Iter 447 evals 489 <D> [M 1,000E0] 5,435E3 2159,70s |1,104E1| {1,057E-4} 1,150E-4 - 
+class edu.stanford.nlp.maxent.CGRunner
+Iter. 448: neg. log cond. likelihood = 5434.596144394353 [491 calls to valueAt]
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+Total time spent in optimization: 2164,91s
+After optimization neg (penalized) log cond likelihood: 5434,60
+Non-zero parameters: 107016/107016 (100,00%)
+Checking model correctness; x size 305182 , ysize 19
+ Lambda too big 108.88826007183744
+ empirical 0.04379864802782183 expected 0.04379864794914614
+ Lambda too big 109.77726900130807
+ empirical 0.0058252936929843796 expected 0.005825293692984374
+ Lambda too big 109.17417302636947
+ empirical 0.005804292183500874 expected 0.0058042917552768745
+ Lambda too big 113.01118218369237
+ empirical 0.001989893023561103 expected 0.001989893023561102
+ Lambda too big 154.2825735504296
+ empirical 0.0022760385902737 expected 0.0022760385902737
+ Lambda too big 105.73577332933446
+ empirical 0.002134278401260122 expected 0.0021342784001620345
+ Lambda too big 103.70576739551204
+ empirical 0.0018166305703222736 expected 0.0018166305703222736
+ Lambda too big 112.1075830955163
+ empirical 0.0015094834941261595 expected 0.0015094831948028861
+ Lambda too big 101.35947653072823
+ empirical 5.854170768523985E-4 expected 5.854170768523985E-4
+ Lambda too big 168.0083065670616
+ empirical 0.018846229572750874 expected 0.018846229572750874
+Model is correct [empirical expec = model expec]
+Saving dictionary of 42269 words ...
+Extractors list:
+Extractors[Extractor(-1,word), Extractor(0,word), Extractor(1,word), ExtractorFrames$ExtractorContinuousTagConjunction(-2,tag), Extractor(-1,tag)]
+rareExtractors[ExtractorUCase(), ExtractorCNumber(), ExtractorDash(), ExtractorAllCap(), ExtractorLetterDigitDash(), CompanyNameDetector(), ExtractorAllCapitalized(), ExtractorUpperDigitDash(), ExtractorStartSentenceCap(), ExtractorMidSentenceCapC(), ExtractorMidSentenceCap(), ExtractorWordSuff(len1,w0), ExtractorWordSuff(len2,w0), ExtractorWordSuff(len3,w0), ExtractorWordSuff(len4,w0), ExtractorWordSuff(len5,w0), ExtractorWordSuff(len6,w0), ExtractorWordSuff(len7,w0), ExtractorWordSuff(len8,w0), ExtractorWordSuff(len9,w0), ExtractorWordSuff(len10,w0), ExtractorWordPref(len1,w0), ExtractorWordPref(len2,w0), ExtractorWordPref(len3,w0), ExtractorWordPref(len4,w0), ExtractorWordPref(len5,w0), ExtractorWordPref(len6,w0), ExtractorWordPref(len7,w0), ExtractorWordPref(len8,w0), ExtractorWordPref(len9,w0), ExtractorWordPref(len10,w0), ExtractorWordShapeClassifier(-1,chris4), ExtractorWordShapeClassifier(0,chris4), ExtractorWordShapeClassifier(1,chris4)]
+Training POS tagger done [2238.2 sec].
