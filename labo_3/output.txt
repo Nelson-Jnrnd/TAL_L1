@@ -1,0 +1,55 @@
+PCFG parsing 13 words (incl. stop): insideScore = -85.51275
+PParser output
+(ROOT (SENT-withVN (NP^SENT (DET-NP Les) (NC-NP gares) (AP^NP (ADJ-AP voyageurs))) (VN^SENT (V-VN sont)) (MWADV-mwadv-s-mwadv1 (P-MWADV en) (N-MWADV fait)) (NP^SENT (DET-NP des) (NC-NP ensembles) (AP^NP (ADJ-AP fonctionnels)) (AP^NP (ADV-AP plus) (ADJ-AP larges))) (PUNC-fs .)))
+DParser output
+(.$. (sont (gares (Les Les) (gares gares) (voyageurs voyageurs)) (sont sont) (en (en en) (fait fait)) (ensembles (des des) (ensembles ensembles) (fonctionnels fonctionnels)) (larges (plus plus) (larges larges)) (. .)) (.$. .$.))
+PCFG parsing 21 words (incl. stop): insideScore = -126.02674
+PParser output
+(ROOT (SENT-withVN (VN^SENT (CLS-VN Elles) (V-VN regroupent)) (NP^SENT (ADJ-NP toutes) (DET-NP les) (NC-NP fonctions) (VPpart^NP (VPP-VPpart centrées) (PP (P-PP sur) (NP^PP (DET-NP l') (NC-NP accès))))) (PP^SENT (P-PP à) (NP^PP (DET-NP le) (NC-NP train) (COORD^NP-NP (CC-COORD et) (NP^COORD (DET-NP l') (NC-NP achat) (PP^NP (P-de2-PP-n des) (NP^PP (NC-NP titres) (PP^NP (P-de2-PP-n de) (NP^PP (NC-NP transport))))))))) (PUNC-fs .)))
+DParser output
+(.$. (regroupent (Elles Elles) (regroupent regroupent) (fonctions (toutes toutes) (les les) (fonctions fonctions) (centrées centrées) (sur (sur sur) (accès (l' l') (accès accès) (à (à à) (train (le le) (train train))) (et (et et) (achat (l' l') (achat achat) (des (des des) (titres (titres titres) (de (de de) (transport transport))))))))) (. .)) (.$. .$.))
+PCFG parsing 12 words (incl. stop): insideScore = -77.24967
+PParser output
+(ROOT (SENT-withVN (VN^SENT (CLS-VN Elles) (V-VN offrent)) (ADV-SENT aussi) (NP^SENT (DET-NP divers) (NC-NP services) (AP^NP (ADJ-AP commerciaux)) (VPpart^NP (VPP-VPpart liés) (PP (P-PP à) (NP^PP (DET-NP le) (NC-NP voyage))))) (PUNC-fs .)))
+DParser output
+(.$. (offrent (Elles Elles) (offrent offrent) (divers (aussi aussi) (divers divers)) (services (services services) (commerciaux commerciaux) (liés (liés liés) (à (à à) (voyage (le le) (voyage voyage))))) (. .)) (.$. .$.))
+PCFG parsing 17 words (incl. stop): insideScore = -105.42473
+PParser output
+(ROOT (SENT-withVN (PP^SENT (P-PP Pour) (NP^PP (DET-NP certaines) (NC-NP gares))) (PUNC-comma ,) (NP^SENT (DET-NP le) (NC-NP passage) (PP^NP (P-de2-PP-n de) (NP^PP (ADJ-NP nombreux) (NC-NP voyageurs)))) (VN^SENT (V-VN justifie)) (NP^SENT (DET-NP l') (NC-NP installation) (PP^NP (P-de2-PP-n de) (NP^PP (NC-NP fonctions) (AP^NP (ADJ-AP annexes))))) (PUNC-fs .)))
+DParser output
+(.$. (justifie (Pour (Pour Pour) (gares (certaines certaines) (gares gares))) (, ,) (passage (le le) (passage passage) (de (de de) (voyageurs (nombreux nombreux) (voyageurs voyageurs)))) (justifie justifie) (installation (l' l') (installation installation) (de (de de) (fonctions (fonctions fonctions) (annexes annexes)))) (. .)) (.$. .$.))
+PCFG parsing 14 words (incl. stop): insideScore = -72.37843
+PParser output
+(ROOT (SENT-withVN (VN^SENT (CLS-VN Il) (CLR-VN s') (V-VN agit)) (PUNC-comma ,) (MWADV-mwadv-s-mwadv1 (P-MWADV par) (N-MWADV exemple)) (PUNC-comma ,) (PP^SENT (P-de2-PP de) (NP^PP (NC-NP commerces) (COORD^NP-NP (CC-COORD et) (NP^COORD (NC-NP services) (AP^NP (ADJ-AP variés)))))) (PUNC-fs .)))
+DParser output
+(.$. (agit (Il Il) (s' s') (agit agit) (, ,) (par (par par) (exemple exemple)) (, ,) (de (de de) (commerces commerces) (et (et et) (services (services services) (variés variés)))) (. .)) (.$. .$.))
+PCFG parsing 13 words (incl. stop): insideScore = -89.92677
+PParser output
+(ROOT (SENT-withVN (NP^SENT (DET-NP Les) (NC-NP gares) (AP^NP (ADV-AP peu) (ADJ-AP importantes))) (VN^SENT (V-VN sont) (VPP-VN appelées)) (AP^SENT (ADJ-AP haltes)) (COORD^SENT-NP (CC-COORD ou) (NP^COORD (MWN-mwn2 (N-MWN points) (P-de2-MWN d') (N-MWN arrêt)))) (PUNC-fs .)))
+DParser output
+(.$. (sont (gares (Les Les) (gares gares) (importantes (peu peu) (importantes importantes))) (sont sont) (appelées appelées) (haltes (haltes haltes) (ou (ou ou) (arrêt (points points) (d' d') (arrêt arrêt)))) (. .)) (.$. .$.))
+PCFG parsing 24 words (incl. stop): insideScore = -149.64662
+PParser output
+(ROOT (SENT-withVN (NP^SENT (DET-NP Le) (NC-NP train)) (VN^SENT (V-VN est)) (NP^SENT-withVN (DET-NP un) (NC-NP matériel) (AP^NP (ADJ-AP roulant)) (AP^NP (ADJ-AP ferroviaire)) (VPpart^NP-withVN (VN^VPpart (VPR-VN assurant)) (NP^VPpart (DET-NP le) (NC-NP transport) (PP^NP (P-de2-PP-n de) (NP^PP (NC-NP personnes)) (COORD^PP-PP (CC-COORD ou) (PP (P-de2-PP de) (NP^PP (NC-NP marchandises)))))) (PP (P-PP sur) (NP^PP (DET-NP une) (NC-NP ligne) (PP^NP (P-de2-PP-n de) (NP^PP (MWN-mwn2 (N-MWN chemin) (P-de2-MWN de) (N-MWN fer)))))))) (PUNC-fs .)))
+DParser output
+(.$. (est (train (Le Le) (train train)) (est est) (matériel (un un) (matériel matériel) (roulant roulant)) (ferroviaire ferroviaire) (assurant (assurant assurant) (transport (le le) (transport transport) (de (de de) (personnes personnes) (ou (ou ou) (de (de de) (marchandises marchandises))))) (sur (sur sur) (ligne (une une) (ligne ligne) (de (de de) (fer (chemin chemin) (de de) (fer fer)))))) (. .)) (.$. .$.))
+PCFG parsing 20 words (incl. stop): insideScore = -123.10358
+PParser output
+(ROOT (SENT-withVN (PP^SENT (P-PP Par) (NP^PP (NC-NP extension))) (PUNC-comma ,) (VN^SENT (CLS-VN on) (V-VN appelle) (MWV (N-MWV train) (DET-MWV le) (N-MWV service))) (Ssub^SENT-withVN (CS-Ssub que) (VN^Ssub (V-VN constitue)) (NP^Ssub (PRO-NP chacun) (PP^NP (P-de2-PP-n de) (NP^PP (DET-NP ces) (NC-NP transports) (PUNC-comma ,) (AP^NP (ADJ-AP réguliers)))) (COORD^NP-ADV (CC-COORD ou) (ADV-COORD non)))) (PUNC-fs .)))
+DParser output
+(.$. (appelle (Par (Par Par) (extension extension)) (, ,) (on on) (appelle appelle) (train (train train) (constitue (service (le le) (service service)) (que que) (constitue constitue) (chacun (chacun chacun) (de (de de) (transports (ces ces) (transports transports) (, ,) (réguliers réguliers)) (ou (ou ou) (non non)))) (. .)))) (.$. .$.))
+PCFG parsing 15 words (incl. stop): insideScore = -86.92151
+PParser output
+(ROOT (SENT-withVN (NP^SENT (DET-NP Le) (NC-NP train)) (VN^SENT (V-VN est)) (NP^SENT (DET-NP un) (NC-NP mode) (PP^NP (P-de2-PP-n de) (NP^PP (NC-NP transport)))) (PUNC-comma ,) (VPpart^SENT-withVN (VN^VPpart (CLR-VN s') (VPR-VN effectuant)) (PP (P-PP sur) (NP^PP (NC-NP voie) (AP^NP (ADJ-AP ferrée))))) (PUNC-fs .)))
+DParser output
+(.$. (est (train (Le Le) (train train)) (est est) (mode (un un) (mode mode) (de (de de) (transport transport))) (, ,) (effectuant (s' s') (effectuant effectuant) (sur (sur sur) (voie (voie voie) (ferrée ferrée)))) (. .)) (.$. .$.))
+PCFG parsing 49 words (incl. stop): insideScore = -361.4911
+PParser output
+(ROOT (SENT-withVN (VPpart^SENT-withVN (NP^VPpart (NC-NP Étymologiquement)) (VN^VPpart (VPR-VN parlant))) (PUNC-comma ,) (NP^SENT (DET-NP le) (NC-NP mot) (NC-NP train)) (VN^SENT (V-VN désigne)) (NP^SENT-withVN (DET-NP une) (NC-NP rame) (PP^NP (P-de2-PP-n de) (NP^PP (NC-NP wagons) (PP^NP (P-de2-PP-n de) (NP^PP (NC-NP marchandises)) (COORD^PP-PP (CC-COORD ou) (PP (P-de2-PP de) (NP^PP (NC-NP voitures) (PP^NP (P-de2-PP-n de) (NP^PP (NC-NP passagers))))))))) (VPpart^NP-withVN (VPP-VPpart tractée) (PP (P-PP par) (NP^PP (MWADV (P-MWADV à) (DET-MWADV le) (ADV-MWADV moins)) (DET-NP une) (NC-NP locomotive))) (PUNC-comma ,) (PP-withVN (MWP (P-MWP par) (N-MWP opposition) (P-MWP à)) (NP^PP-withVN (DET-NP les) (ADJ-NP rames) (NC-NP automotrices) (PUNC -LRB-) (NC-NP catégorie) (Srel-withVN (NP^Srel (PROREL-NP dont)) (VN^Srel (MWV (V-MWV fait) (N-MWV partie))) (NP^Srel (DET-NP le) (NC-NP TGV)))))) (PUNC -RRB-) (COORD^NP-NP-withVN (CC-COORD ou) (NP^COORD-withVN (NC-NP autorails) (Srel-withVN (NP^Srel (PROREL-NP qui)) (VN^Srel (V-VN assurent)) (NP^Srel (DET-NP leur) (ADJ-NP propre) (NC-NP propulsion)))))) (PUNC-fs .)))
+DParser output
+(.$. (assurent (Étymologiquement (Étymologiquement Étymologiquement) (parlant (parlant parlant) (fait (, (, ,) (mot (le le) (mot mot)) (désigne (train train) (désigne désigne) (catégorie (une (une une) (rame rame) (de (de de) (wagons (wagons wagons) (de (de de) (marchandises marchandises)) (ou (ou ou) (de (de de) (voitures (voitures voitures) (de (de de) (passagers passagers)) (tractée (tractée tractée) (par (par par) (locomotive (à (à à) (le le) (moins moins)) (une une) (locomotive locomotive))) (, ,) (par (par par) (opposition opposition)))) (à (à à) (automotrices (les les) (rames rames) (automotrices automotrices)))) (-LRB- -LRB-))))) (catégorie catégorie)))) (dont dont) (fait fait) (partie (partie partie) (TGV (le le) (TGV TGV)) (-RRB- -RRB-)) (ou (ou ou) (autorails autorails))))) (qui qui) (assurent assurent) (propulsion (propre (leur leur) (propre propre)) (propulsion propulsion)) (. .)) (.$. .$.))
+PCFG parsing 41 words (incl. stop): insideScore = -292.90765
+PParser output
+(ROOT (SENT-withVN (ADV-SENT Cependant) (PUNC-comma ,) (PP^SENT (P-PP dans) (NP^PP (DET-NP l') (NC-NP usage) (AP^NP (ADJ-AP courant)))) (PUNC-comma ,) (NP^SENT (DET-NP le) (NC-NP mot) (NC-NP train)) (VN^SENT (V-VN désigne) (ADV-VN n') (V-VN importe)) (NP^SENT (DETWH-NP quelle) (NC-NP circulation) (AP^NP (ADJ-AP ferroviaire))) (PUNC-comma ,) (NP^SENT-withVN (DETWH-NP quelle) (Ssub^NP-withVN (CS-Ssub que) (VN^Ssub (VS-VN soit)) (NP^Ssub (DET-NP sa) (NC-NP composition)))) (PUNC-comma ,) (PP^SENT (P-PP depuis) (NP^PP (DET-NP le) (ADV-NP plus) (ADJ-NP simple) (MWN (N-MWN autorail) (ADJ-MWN local)) (AP^NP (ADJ-AP jusqu'aux)) (NP^NP (ADJ-NP longs) (NC-NP trains) (PP^NP (P-de2-PP-n de) (NP^PP (ADJ-NP grandes) (NC-NP lignes)) (COORD^PP-PP (CC-COORD ou) (PP (P-de2-PP de) (NP^PP (NC-NP transports) (AP^NP (ADJ-AP industriels))))))))) (PUNC-fs .)))
+DParser output
+(.$. (désigne (Cependant Cependant) (, ,) (dans (dans dans) (usage (l' l') (usage usage) (courant courant))) (, ,) (mot (le le) (mot mot)) (train train) (désigne désigne) (trains (n' (n' n') (importe importe)) (quelle (quelle quelle) (soit (circulation (circulation circulation) (ferroviaire ferroviaire) (, ,)) (quelle quelle) (que que) (soit soit) (composition (sa sa) (composition composition)) (, ,) (depuis (depuis depuis) (jusqu'aux (simple (le le) (plus plus) (simple simple) (autorail (autorail autorail) (local local))) (jusqu'aux jusqu'aux) (longs longs))))) (trains trains) (de (de de) (lignes (grandes grandes) (lignes lignes))) (ou (ou ou) (de (de de) (transports (transports transports) (industriels industriels))))) (. .)) (.$. .$.))
