@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+labo_4/w2v_vectors.kv
+labo_4/w2v_vectors.kv.vectors.npy
